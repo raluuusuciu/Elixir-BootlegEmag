@@ -1,0 +1,875 @@
+2021-05-23 14:46:00.056 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:46:00.069 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:46:00.110 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:46:00.110 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:46:00.110 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:46:00.111 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:46:00.178 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:46:00.178 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:46:00.270 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:46:00.273 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:46:00.375 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:46:17.473 [error] <0.577.0> CRASH REPORT Process <0.577.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => publish,message => nil,module => 'Elixir.EventPublisher',reason => nil},[{'Elixir.EventPublisher',publish,[<<"api.login.auth-login.events">>,{<<"1">>,<<"admin">>}],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_tes..."},...]},...]},...},...},...}
+2021-05-23 14:46:17.509 [error] <0.577.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.576.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => publish,message => nil,module => 'Elixir.EventPublisher',reason => nil},[{'Elixir.EventPublisher',publish,[<<"api.login.auth-login.events">>,{<<"1">>,<<"admin">>}],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/..."},...]},...]},...},...}
+2021-05-23 14:46:45.924 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:46:45.929 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:46:45.942 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:46:45.944 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:46:45.944 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:46:45.944 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:46:45.968 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:46:45.968 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:46:45.991 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:46:45.993 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:46:46.026 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:46:54.236 [error] <0.498.0> CRASH REPORT Process <0.498.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,10}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib..."},...]},...]},...},...},...}
+2021-05-23 14:46:54.267 [error] <0.498.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.497.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,10}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/p..."},...]},...]},...},...}
+2021-05-23 14:47:37.603 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:47:37.607 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:47:37.615 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:47:37.615 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:47:37.616 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:47:37.616 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:47:37.623 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:47:37.623 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:47:37.634 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:47:37.635 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:47:37.652 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:47:41.323 [error] <0.498.0> CRASH REPORT Process <0.498.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,38}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_te..."},...]},...]},...},...},...}
+2021-05-23 14:47:41.327 [error] <0.498.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.497.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,38}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test..."},...]},...]},...},...}
+2021-05-23 14:48:41.044 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:48:41.053 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:48:41.071 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:48:41.071 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:48:41.071 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:48:41.071 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:48:41.096 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:48:41.096 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:48:41.125 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:48:41.127 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:48:41.195 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:48:43.335 [error] <0.498.0> CRASH REPORT Process <0.498.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 3,function => publish,message => nil,module => 'Elixir.EventBus',reason => nil},[{'Elixir.EventBus',publish,[<<"api.login.auth-login.events">>,<<"{\"name\":\"admin\",\"id\":\"1\"}">>,[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"li..."},...]},...]},...},...},...}
+2021-05-23 14:48:43.385 [error] <0.498.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.497.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 3,function => publish,message => nil,module => 'Elixir.EventBus',reason => nil},[{'Elixir.EventBus',publish,[<<"api.login.auth-login.events">>,<<"{\"name\":\"admin\",\"id\":\"1\"}">>,[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/..."},...]},...]},...},...}
+2021-05-23 14:49:22.851 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:49:22.855 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:49:22.862 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:49:22.862 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:49:22.862 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:49:22.862 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:49:22.871 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:49:22.871 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:49:22.882 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:49:22.883 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:49:22.924 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:49:25.011 [error] <0.499.0> CRASH REPORT Process <0.499.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"p...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 14:49:25.014 [error] <0.499.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.498.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"pos...">> => ...,...},...}},...},...]}},...}
+2021-05-23 14:49:42.472 [error] <0.501.0> CRASH REPORT Process <0.501.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"p...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 14:49:42.472 [error] <0.501.0> Cowboy stream 2 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.498.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"pos...">> => ...,...},...}},...},...]}},...}
+2021-05-23 14:51:39.532 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:51:39.537 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:51:39.553 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:51:39.553 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:51:39.554 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:51:39.554 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:51:39.577 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:51:39.577 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:51:39.608 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:51:39.610 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:51:39.668 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:51:42.634 [error] <0.505.0> CRASH REPORT Process <0.505.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.133089409>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 14:51:42.664 [error] <0.505.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.504.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.133089409>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"po...">> => ...,...},...}},...},...]}},...}
+2021-05-23 14:54:27.796 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:54:27.801 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:54:27.815 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:54:27.815 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:54:27.815 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:54:27.815 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:54:27.838 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:54:27.839 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:54:27.863 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:54:27.865 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:54:27.923 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:54:30.475 [error] <0.505.0> CRASH REPORT Process <0.505.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.3309381>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"po...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 14:54:30.490 [error] <0.505.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.504.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.3309381>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"post...">> => ...,...},...}},...},...]}},...}
+2021-05-23 14:54:57.244 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 14:54:57.250 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 14:54:57.263 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 14:54:57.265 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 14:54:57.265 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 14:54:57.265 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 14:54:57.287 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 14:54:57.287 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 14:54:57.312 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 14:54:57.314 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 14:54:57.375 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 14:54:58.997 [error] <0.505.0> CRASH REPORT Process <0.505.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.105923794>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 14:54:59.001 [error] <0.505.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.504.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.105923794>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"po...">> => ...,...},...}},...},...]}},...}
+2021-05-23 15:00:02.967 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:00:02.972 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:00:02.985 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:00:02.985 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:00:02.985 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:00:02.985 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:00:03.007 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:00:03.007 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:00:03.032 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:00:03.034 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:00:03.086 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:00:05.395 [error] <0.505.0> CRASH REPORT Process <0.505.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"p...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 15:00:05.417 [error] <0.505.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.504.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"pos...">> => ...,...},...}},...},...]}},...}
+2021-05-23 15:03:23.020 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:03:23.025 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:03:23.038 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:03:23.038 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:03:23.038 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:03:23.038 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:03:23.046 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:03:23.046 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:03:23.077 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:03:23.079 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:03:23.135 [error] <0.388.0> CRASH REPORT Process <0.388.0> with 0 neighbours exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.EventPublisher was given as a child to a supervisor but it does not exist.">>} in 'Elixir.Supervisor':init_child/1 line 631 in application_master:init/4 line 142
+2021-05-23 15:03:23.135 [info] <0.44.0> Application api_test exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.EventPublisher was given as a child to a supervisor but it does not exist.">>} in 'Elixir.Supervisor':init_child/1 line 631
+2021-05-23 15:03:23.145 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:03:23.145 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:03:23.145 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:03:23.146 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:03:23.146 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:03:23.146 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:03:23.146 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:03:23.146 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:03:23.146 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:03:41.527 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:03:41.531 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:03:41.538 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:03:41.538 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:03:41.538 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:03:41.538 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:03:41.544 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:03:41.544 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:03:41.555 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:03:41.557 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:03:41.598 [error] <0.388.0> CRASH REPORT Process <0.388.0> with 0 neighbours exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :perm...">>} in 'Elixir.Supervisor':init_child/1 line 631 in application_master:init/4 line 142
+2021-05-23 15:03:41.598 [info] <0.44.0> Application api_test exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :perm...">>} in 'Elixir.Supervisor':init_child/1 line 631
+2021-05-23 15:03:41.606 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:03:41.606 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:03:41.606 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:03:41.607 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:03:41.607 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:03:41.607 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:03:41.607 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:03:41.607 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:03:41.607 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:04:27.252 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:04:27.256 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:04:27.264 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:04:27.264 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:04:27.265 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:04:27.265 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:04:27.270 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:04:27.270 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:04:27.281 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:04:27.282 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:04:27.314 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :perm...">>} in 'Elixir.Supervisor':init_child/1 line 631 in application_master:init/4 line 142
+2021-05-23 15:04:27.314 [info] <0.44.0> Application api_test exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :perm...">>} in 'Elixir.Supervisor':init_child/1 line 631
+2021-05-23 15:04:27.323 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:04:27.323 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:04:27.323 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:04:27.324 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:04:27.324 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:04:27.324 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:04:27.324 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:04:27.324 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:04:27.325 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:04:49.003 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:04:49.007 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:04:49.014 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:04:49.014 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:04:49.014 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:04:49.015 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:04:49.021 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:04:49.021 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:04:49.031 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:04:49.033 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:04:49.096 [error] <0.398.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:04:49.097 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:04:49.097 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:04:49.111 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:04:49.112 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:04:49.112 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:04:49.112 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:04:49.112 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:04:49.112 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:04:49.112 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:04:49.113 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:04:49.113 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:06:00.933 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:06:00.937 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:06:00.944 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:06:00.944 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:06:00.944 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:06:00.944 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:06:00.951 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:06:00.951 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:06:00.962 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:06:00.963 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:06:01.013 [error] <0.398.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:06:01.013 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:06:01.014 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:06:01.026 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:06:01.026 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:06:01.026 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:06:01.027 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:06:01.027 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:06:01.027 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:06:01.027 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:06:01.028 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:06:01.028 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:06:17.234 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:06:17.239 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:06:17.246 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:06:17.247 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:06:17.247 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:06:17.247 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:06:17.255 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:06:17.255 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:06:17.265 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:06:17.267 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:06:17.299 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :perm...">>} in 'Elixir.Supervisor':init_child/1 line 631 in application_master:init/4 line 142
+2021-05-23 15:06:17.299 [info] <0.44.0> Application api_test exited with reason: #{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :perm...">>} in 'Elixir.Supervisor':init_child/1 line 631
+2021-05-23 15:06:17.307 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:06:17.307 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:06:17.307 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:06:17.308 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:06:17.308 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:06:17.308 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:06:17.308 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:06:17.308 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:06:17.308 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:07:26.696 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:07:26.701 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:07:26.707 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:07:26.707 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:07:26.707 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:07:26.708 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:07:26.714 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:07:26.714 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:07:26.725 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:07:26.726 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:07:26.775 [error] <0.398.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:07:26.775 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:07:26.775 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:07:26.788 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:07:26.788 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:07:26.788 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:07:26.789 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:07:26.789 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:07:26.789 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:07:26.789 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:07:26.790 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:07:26.790 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:08:12.245 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:08:12.251 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:08:12.258 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:08:12.258 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:08:12.259 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:08:12.259 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:08:12.265 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:08:12.265 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:08:12.276 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:08:12.278 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:08:12.323 [error] <0.398.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:08:12.323 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:08:12.323 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:08:12.335 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:08:12.335 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:08:12.335 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:08:12.336 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:08:12.336 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:08:12.336 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:08:12.336 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:08:12.336 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:08:12.336 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:09:04.806 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:09:04.813 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:09:04.822 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:09:04.822 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:09:04.823 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:09:04.823 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:09:04.831 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:09:04.831 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:09:04.844 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:09:04.846 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:09:04.899 [error] <0.398.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason ok in context start_error
+2021-05-23 15:09:04.899 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',ok}},{'Elixir.ApiTest.Application',start,[normal,[]]}} in application_master:init/4 line 142
+2021-05-23 15:09:04.899 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',ok}},{'Elixir.ApiTest.Application',start,[normal,[]]}}
+2021-05-23 15:09:04.901 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:09:04.901 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:09:04.901 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:09:04.902 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:09:04.902 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:09:04.902 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:09:04.902 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:09:04.902 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:09:04.902 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:09:33.132 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:09:33.139 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:09:33.151 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:09:33.151 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:09:33.151 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:09:33.151 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:09:33.164 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:09:33.165 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:09:33.188 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:09:33.198 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:09:33.307 [error] <0.392.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:09:33.307 [error] <0.390.0> CRASH REPORT Process <0.390.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:09:33.308 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:09:33.342 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:09:33.343 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:09:33.343 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:09:33.343 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:09:33.343 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:09:33.343 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:09:33.343 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:09:33.344 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:09:33.344 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:09:48.940 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:09:48.945 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:09:48.954 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:09:48.955 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:09:48.955 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:09:48.955 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:09:48.963 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:09:48.963 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:09:48.975 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:09:48.977 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:09:49.027 [error] <0.398.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:09:49.027 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:09:49.027 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:09:49.041 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:09:49.041 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:09:49.041 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:09:49.042 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:09:49.042 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:09:49.042 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:09:49.042 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:09:49.043 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:09:49.043 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:11:19.969 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:11:19.974 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:11:19.982 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:11:19.982 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:11:19.982 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:11:19.982 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:11:19.989 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:11:19.990 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:11:20.001 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:11:20.003 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:11:20.021 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:11:22.889 [error] <0.503.0> CRASH REPORT Process <0.503.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',...},...]},...},...},...}
+2021-05-23 15:11:22.915 [error] <0.503.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.502.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',...},...]},...},...}
+2021-05-23 15:12:44.563 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:12:44.575 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:12:44.598 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:12:44.602 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:12:44.603 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:12:44.604 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:12:44.623 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:12:44.623 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:12:44.662 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:12:44.668 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:12:44.734 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:12:46.985 [error] <0.505.0> CRASH REPORT Process <0.505.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',...},...]},...},...},...}
+2021-05-23 15:12:46.994 [error] <0.505.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.504.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',...},...]},...},...}
+2021-05-23 15:13:36.723 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:13:36.730 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:13:36.740 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:13:36.742 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:13:36.742 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:13:36.742 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:13:36.749 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:13:36.749 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:13:36.761 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:13:36.763 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:13:36.826 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:13:38.595 [error] <0.505.0> CRASH REPORT Process <0.505.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"errors were found at the given arguments:\n\n  * 1st argument: not a bitstring\n">>},[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',...},...]},...},...},...}
+2021-05-23 15:13:38.601 [error] <0.505.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.504.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"errors were found at the given arguments:\n\n  * 1st argument: not a bitstring\n">>},[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',...},...]},...},...}
+2021-05-23 15:14:14.481 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:14:14.487 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:14:14.498 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:14:14.498 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:14:14.498 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:14:14.499 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:14:14.505 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:14:14.505 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:14:14.516 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:14:14.517 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:14:14.542 [error] <0.396.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},{gen_server,...}]}} in context start_error
+2021-05-23 15:14:14.542 [error] <0.394.0> CRASH REPORT Process <0.394.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:14:14.542 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},...]}}}},...}
+2021-05-23 15:14:14.553 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:14:14.553 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:14:14.553 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:14:14.554 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:14:14.554 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:14:14.554 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:14:14.554 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:14:14.554 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:14:14.554 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:14:30.288 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:14:30.297 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:14:30.317 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:14:30.317 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:14:30.317 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:14:30.317 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:14:30.330 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:14:30.330 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:14:30.343 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:14:30.345 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:14:30.390 [error] <0.392.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:14:30.390 [error] <0.390.0> CRASH REPORT Process <0.390.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:14:30.390 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:14:30.402 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:14:30.403 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:14:30.403 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:14:30.403 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:14:30.403 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:14:30.403 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:14:30.403 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:14:30.404 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:14:30.404 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:15:13.270 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:15:13.274 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:15:13.284 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:15:13.284 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:15:13.285 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:15:13.285 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:15:13.292 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:15:13.292 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:15:13.305 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:15:13.307 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:15:13.357 [error] <0.378.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:15:13.357 [error] <0.376.0> CRASH REPORT Process <0.376.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:15:13.357 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:15:13.384 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:15:13.384 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:15:13.384 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:15:13.384 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:15:13.384 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:15:13.384 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:15:13.384 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:15:13.385 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:15:13.385 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:15:20.310 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:15:20.314 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:15:20.322 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:15:20.322 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:15:20.323 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:15:20.323 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:15:20.330 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:15:20.330 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:15:20.342 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:15:20.344 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:15:20.395 [error] <0.392.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},{gen_server,...}]}} in context start_error
+2021-05-23 15:15:20.395 [error] <0.390.0> CRASH REPORT Process <0.390.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:15:20.395 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},...]}}}},...}
+2021-05-23 15:15:20.405 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:15:20.405 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:15:20.405 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:15:20.406 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:15:20.406 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:15:20.406 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:15:20.406 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:15:20.406 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:15:20.406 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:15:35.480 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:15:35.485 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:15:35.496 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:15:35.496 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:15:35.496 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:15:35.497 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:15:35.503 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:15:35.503 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:15:35.517 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:15:35.519 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:15:35.570 [error] <0.392.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link([{app_id,api_test}]) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:15:35.570 [error] <0.390.0> CRASH REPORT Process <0.390.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:15:35.570 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:15:35.589 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:15:35.589 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:15:35.589 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:15:35.590 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:15:35.590 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:15:35.590 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:15:35.590 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:15:35.590 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:15:35.590 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:16:13.764 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:16:13.768 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:16:13.779 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:16:13.779 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:16:13.779 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:16:13.779 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:16:13.788 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:16:13.788 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:16:13.800 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:16:13.802 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:16:13.852 [error] <0.390.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Helios.Service.EventPublisher' started with 'Elixir.Helios.Service.EventPublisher':start_link({app_id,helios}) at undefined exit with reason {'EXIT',{undef,[{'Elixir.Helios.Service.EventPublisher',start_link,[{app_id,helios}],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},...]}} in context start_error
+2021-05-23 15:16:13.853 [error] <0.388.0> CRASH REPORT Process <0.388.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Helios.Service.EventPublisher',{'EXIT',{undef,[{'Elixir.Helios.Service.EventPublisher',start_link,[{app_id,helios}],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:16:13.853 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Helios.Service.EventPublisher',{'EXIT',{undef,[{'Elixir.Helios.Service.EventPublisher',start_link,[{app_id,helios}],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},...]},...]}}}},...}
+2021-05-23 15:16:13.863 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:16:13.863 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:16:13.863 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:16:13.863 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:16:13.864 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:16:13.864 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:16:13.864 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:16:13.864 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:16:13.864 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:16:24.296 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:16:24.300 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:16:24.307 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:16:24.307 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:16:24.307 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:16:24.307 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:16:24.314 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:16:24.314 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:16:24.326 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:16:24.327 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:16:24.372 [error] <0.390.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link({app_id,helios}) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:16:24.372 [error] <0.388.0> CRASH REPORT Process <0.388.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:16:24.373 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:16:24.387 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:16:24.388 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:16:56.833 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:16:56.838 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:16:56.847 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:16:56.847 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:16:56.847 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:16:56.847 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:16:56.854 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:16:56.854 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:16:56.866 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:16:56.868 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:16:56.918 [error] <0.398.0> Supervisor 'Elixir.ApiTest.Supervisor' had child 'Elixir.Api.Service.Publisher' started with 'Elixir.Api.Service.Publisher':start_link({app_id,helios}) at undefined exit with reason {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"super..."},...]},...]}} in context start_error
+2021-05-23 15:16:56.918 [error] <0.396.0> CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...} in application_master:init/4 line 142
+2021-05-23 15:16:56.918 [info] <0.44.0> Application api_test exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"superv..."},...]},...]}}}},...}
+2021-05-23 15:16:56.931 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:16:56.931 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:16:56.931 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:16:56.932 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:16:56.932 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:16:56.932 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:16:56.932 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:16:56.932 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:16:56.932 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:23:53.961 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:23:53.965 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:23:53.974 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:23:53.975 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:23:53.975 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:23:53.975 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:23:53.982 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:23:53.982 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:23:53.994 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:23:53.996 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:23:54.015 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:24:03.202 [error] <0.515.0> CRASH REPORT Process <0.515.0> with 2 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"argument error">>},[{erlang,'++',[#{id => <<"1">>,name => <<"admin">>},[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,11}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,37}]},{'Elixir.Api.Router',dispatch,...},...]},...},...},...}
+2021-05-23 15:24:03.207 [error] <0.515.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.514.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"argument error">>},[{erlang,'++',[#{id => <<"1">>,name => <<"admin">>},[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,11}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,37}]},{'Elixir.Api.Router',dispatch,...},...]},...},...}
+2021-05-23 15:25:44.165 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:25:44.170 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:25:44.177 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:25:44.178 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:25:44.178 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:25:44.178 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:25:44.185 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:25:44.185 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:25:44.198 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:25:44.199 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:25:44.222 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:25:46.405 [error] <0.498.0> CRASH REPORT Process <0.498.0> with 2 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"p...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 15:25:46.409 [error] <0.498.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.497.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"pos...">> => ...,...},...}},...},...]}},...}
+2021-05-23 15:26:21.516 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:26:21.520 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:26:21.527 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:26:21.527 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:26:21.527 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:26:21.527 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:26:21.533 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:26:21.534 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:26:21.544 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:26:21.546 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:26:21.602 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:28:32.096 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:28:32.102 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:28:32.112 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:28:32.113 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:28:32.113 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:28:32.113 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:28:32.121 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:28:32.121 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:28:32.136 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:28:32.137 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:28:32.160 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:28:33.757 [error] <0.510.0> CRASH REPORT Process <0.510.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"p...">> => ...,...},...}},...},...]}},...},...}
+2021-05-23 15:28:33.761 [error] <0.510.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.509.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"pos...">> => ...,...},...}},...},...]}},...}
+2021-05-23 15:30:40.672 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:30:40.677 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:30:40.686 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:30:40.686 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:30:40.686 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:30:40.686 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:30:40.693 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:30:40.693 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:30:40.705 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:30:40.707 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:30:40.750 [error] <0.395.0>@Elixir.Api.Service.EventPublisher:start CRASH REPORT Process <0.395.0> with 0 neighbours exited with reason: call to undefined function 'Elixir.Api.Service.EventPublisher':start() in application_master:init/4 line 142
+2021-05-23 15:30:40.750 [info] <0.44.0>@Elixir.Api.Service.EventPublisher:start Application api_test exited with reason: call to undefined function 'Elixir.Api.Service.EventPublisher':start()
+2021-05-23 15:30:40.765 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:30:40.765 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:30:40.765 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:30:40.766 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:30:40.766 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:30:40.766 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:30:40.766 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:30:40.766 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:30:40.766 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:31:01.804 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:31:01.808 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:31:01.819 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:31:01.819 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:31:01.819 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:31:01.820 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:31:01.828 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:31:01.828 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:31:01.840 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:31:01.842 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:31:01.898 [error] <0.388.0>@Elixir.Api.Service.Publisher:start:2 CRASH REPORT Process <0.388.0> with 0 neighbours exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2 in application_master:init/4 line 142
+2021-05-23 15:31:01.898 [info] <0.44.0>@Elixir.Api.Service.Publisher:start:2 Application api_test exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2
+2021-05-23 15:31:01.915 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:31:01.916 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:31:01.916 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:31:01.916 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:31:01.916 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:31:01.916 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:31:01.916 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:31:01.916 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:31:01.917 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:31:27.494 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:31:27.498 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:31:27.506 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:31:27.506 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:31:27.506 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:31:27.506 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:31:27.513 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:31:27.513 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:31:27.524 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:31:27.525 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:31:27.564 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:31:37.324 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:31:37.329 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:31:37.337 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:31:37.337 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:31:37.338 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:31:37.338 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:31:37.344 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:31:37.344 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:31:37.357 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:31:37.358 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:31:37.401 [error] <0.396.0>@Elixir.Api.Service.Publisher:start:2 CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2 in application_master:init/4 line 142
+2021-05-23 15:31:37.401 [info] <0.44.0>@Elixir.Api.Service.Publisher:start:2 Application api_test exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2
+2021-05-23 15:31:37.421 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:31:37.421 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:31:37.421 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:31:37.422 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:31:37.422 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:31:37.422 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:31:37.422 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:31:37.422 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:31:37.422 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:32:15.237 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:32:15.242 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:32:15.251 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:32:15.251 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:32:15.251 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:32:15.251 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:32:15.259 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:32:15.259 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:32:15.271 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:32:15.272 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:32:15.316 [error] <0.396.0>@Elixir.Api.Service.Publisher:start:2 CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2 in application_master:init/4 line 142
+2021-05-23 15:32:15.316 [info] <0.44.0>@Elixir.Api.Service.Publisher:start:2 Application api_test exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2
+2021-05-23 15:32:15.336 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:32:15.336 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:32:15.336 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:32:15.336 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:32:15.336 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:32:15.336 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:32:15.337 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:32:15.337 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:32:15.337 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:32:23.113 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:32:23.118 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:32:23.126 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:32:23.127 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:32:23.128 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:32:23.128 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:32:23.135 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:32:23.135 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:32:23.149 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:32:23.150 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:32:23.196 [error] <0.396.0>@Elixir.Api.Service.Publisher:start:2 CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2 in application_master:init/4 line 142
+2021-05-23 15:32:23.197 [info] <0.44.0>@Elixir.Api.Service.Publisher:start:2 Application api_test exited with reason: bad argument in call to erlang:byte_size(nil) in 'Elixir.Api.Service.Publisher':start/2 line 2
+2021-05-23 15:32:23.220 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:32:23.220 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:32:23.220 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:32:23.221 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:32:23.221 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:32:23.221 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:32:23.221 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:32:23.222 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:32:23.222 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:32:34.065 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:32:34.069 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:32:34.078 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:32:34.079 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:32:34.079 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:32:34.079 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:32:34.085 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:32:34.085 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:32:34.098 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:32:34.100 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:32:34.144 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:33:12.576 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:33:12.581 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:33:12.590 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:33:12.590 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:33:12.590 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:33:12.591 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:33:12.600 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:33:12.600 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:33:12.614 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:33:12.617 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:33:12.836 [warning] <0.397.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-23 15:33:13.015 [error] <0.396.0>@Elixir.Api.Service.Publisher:start:2 CRASH REPORT Process <0.396.0> with 0 neighbours exited with reason: no match of right hand value {error,{auth_failure,"ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile."}} in 'Elixir.Api.Service.Publisher':start/2 line 2 in application_master:init/4 line 142
+2021-05-23 15:33:13.015 [info] <0.44.0>@Elixir.Api.Service.Publisher:start:2 Application api_test exited with reason: no match of right hand value {error,{auth_failure,"ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile."}} in 'Elixir.Api.Service.Publisher':start/2 line 2
+2021-05-23 15:33:13.025 [info] <0.44.0> Application amqp exited with reason: stopped
+2021-05-23 15:33:13.025 [info] <0.44.0> Application amqp_client exited with reason: stopped
+2021-05-23 15:33:13.025 [info] <0.44.0> Application rabbit_common exited with reason: stopped
+2021-05-23 15:33:13.026 [info] <0.44.0> Application credentials_obfuscation exited with reason: stopped
+2021-05-23 15:33:13.026 [info] <0.44.0> Application recon exited with reason: stopped
+2021-05-23 15:33:13.026 [info] <0.44.0> Application jsx exited with reason: stopped
+2021-05-23 15:33:13.026 [info] <0.44.0> Application tools exited with reason: stopped
+2021-05-23 15:33:13.026 [info] <0.44.0> Application sasl exited with reason: stopped
+2021-05-23 15:33:13.026 [info] <0.44.0> Application xmerl exited with reason: stopped
+2021-05-23 15:34:55.821 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:34:55.827 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:34:55.836 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:34:55.836 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:34:55.836 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:34:55.837 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:34:55.845 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:34:55.845 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:34:55.858 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:34:55.860 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:34:55.943 [warning] <0.462.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-23 15:34:56.330 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 15:36:38.440 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 15:36:38.446 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 15:36:38.455 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 15:36:38.455 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 15:36:38.455 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 15:36:38.455 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 15:36:38.462 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 15:36:38.462 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 15:36:38.474 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 15:36:38.476 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 15:36:38.568 [warning] <0.396.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-23 15:36:38.786 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 16:07:27.052 [error] <0.509.0> gen_server <0.509.0> terminated with reason: {socket_error,timeout}
+2021-05-23 16:07:27.052 [error] <0.503.0> gen_server <0.503.0> terminated with reason: {socket_error,timeout}
+2021-05-23 16:07:27.123 [error] <0.509.0> CRASH REPORT Process <0.509.0> with 0 neighbours exited with reason: {socket_error,timeout} in gen_server:handle_common_reply/8 line 811
+2021-05-23 16:07:27.123 [error] <0.502.0> Supervisor {<0.502.0>,amqp_connection_type_sup} had child main_reader started with amqp_main_reader:start_link(#Port<0.7>, <0.503.0>, <0.507.0>, {method,rabbit_framing_amqp_0_9_1}, <<"client 127.0.0.1:49434 -> 127.0.0.1:5672">>) at <0.509.0> exit with reason {socket_error,timeout} in context child_terminated
+2021-05-23 16:07:27.124 [error] <0.502.0> Supervisor {<0.502.0>,amqp_connection_type_sup} had child main_reader started with amqp_main_reader:start_link(#Port<0.7>, <0.503.0>, <0.507.0>, {method,rabbit_framing_amqp_0_9_1}, <<"client 127.0.0.1:49434 -> 127.0.0.1:5672">>) at <0.509.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-05-23 16:07:27.127 [error] <0.503.0> CRASH REPORT Process <0.503.0> with 0 neighbours exited with reason: {socket_error,timeout} in gen_server:handle_common_reply/8 line 811
+2021-05-23 16:07:27.127 [error] <0.501.0> Supervisor {<0.501.0>,amqp_connection_sup} had child connection started with amqp_gen_connection:start_link(<0.502.0>, {amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,...}) at <0.503.0> exit with reason {socket_error,timeout} in context child_terminated
+2021-05-23 16:07:27.127 [error] <0.501.0> Supervisor {<0.501.0>,amqp_connection_sup} had child connection started with amqp_gen_connection:start_link(<0.502.0>, {amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,...}) at <0.503.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-05-23 19:09:30.360 [error] <0.565.0> CRASH REPORT Process <0.565.0> with 1 neighbours exited with reason: {{{{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.565.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => ...,...}},...},...]}},...},...}
+2021-05-23 19:09:30.367 [error] <0.565.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.564.0> had its request process exit with reason: {{{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.565.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,...}},...},...]}},...}
+2021-05-23 19:09:31.113 [error] <0.567.0> CRASH REPORT Process <0.567.0> with 1 neighbours exited with reason: {{{{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.567.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => ...,...}},...},...]}},...},...}
+2021-05-23 19:09:31.113 [error] <0.567.0> Cowboy stream 2 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.564.0> had its request process exit with reason: {{{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.567.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,...}},...},...]}},...}
+2021-05-23 19:09:48.455 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 19:09:48.462 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 19:09:48.472 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 19:09:48.473 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 19:09:48.473 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 19:09:48.473 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 19:09:48.483 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 19:09:48.483 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 19:09:48.502 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 19:09:48.504 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 19:09:48.602 [warning] <0.377.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-23 19:09:48.770 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 19:10:31.520 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 19:10:31.525 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 19:10:31.534 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 19:10:31.534 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 19:10:31.535 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 19:10:31.535 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 19:10:31.541 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 19:10:31.541 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 19:10:31.553 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 19:10:31.555 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 19:10:31.652 [warning] <0.397.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-23 19:10:31.839 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 19:10:34.063 [error] <0.521.0> CRASH REPORT Process <0.521.0> with 1 neighbours exited with reason: {{{{noproc,{'Elixir.GenServer',call,[bus_tate,{get,#Fun<Elixir.Api.Helpers.EventBus.0.30129231>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<...>>,...},...}},...},...]}},...},...}
+2021-05-23 19:10:34.070 [error] <0.521.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.520.0> had its request process exit with reason: {{{noproc,{'Elixir.GenServer',call,[bus_tate,{get,#Fun<Elixir.Api.Helpers.EventBus.0.30129231>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"...">>,...},...}},...},...]}},...}
+2021-05-23 19:10:53.469 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 19:10:53.474 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 19:10:53.483 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 19:10:53.483 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 19:10:53.483 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 19:10:53.483 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 19:10:53.490 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 19:10:53.491 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 19:10:53.501 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 19:10:53.503 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 19:10:53.558 [warning] <0.397.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-23 19:10:53.628 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 19:37:49.058 [error] <0.510.0> gen_server <0.510.0> terminated with reason: {socket_error,timeout}
+2021-05-23 19:37:49.061 [error] <0.504.0> gen_server <0.504.0> terminated with reason: {socket_error,timeout}
+2021-05-23 19:37:49.123 [error] <0.510.0> CRASH REPORT Process <0.510.0> with 0 neighbours exited with reason: {socket_error,timeout} in gen_server:handle_common_reply/8 line 811
+2021-05-23 19:37:49.124 [error] <0.503.0> Supervisor {<0.503.0>,amqp_connection_type_sup} had child main_reader started with amqp_main_reader:start_link(#Port<0.7>, <0.504.0>, <0.508.0>, {method,rabbit_framing_amqp_0_9_1}, <<"client 127.0.0.1:58949 -> 127.0.0.1:5672">>) at <0.510.0> exit with reason {socket_error,timeout} in context child_terminated
+2021-05-23 19:37:49.124 [error] <0.503.0> Supervisor {<0.503.0>,amqp_connection_type_sup} had child main_reader started with amqp_main_reader:start_link(#Port<0.7>, <0.504.0>, <0.508.0>, {method,rabbit_framing_amqp_0_9_1}, <<"client 127.0.0.1:58949 -> 127.0.0.1:5672">>) at <0.510.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-05-23 19:37:56.021 [error] <0.504.0> CRASH REPORT Process <0.504.0> with 0 neighbours exited with reason: {socket_error,timeout} in gen_server:handle_common_reply/8 line 811
+2021-05-23 19:37:56.021 [error] <0.502.0> Supervisor {<0.502.0>,amqp_connection_sup} had child connection started with amqp_gen_connection:start_link(<0.503.0>, {amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,...}) at <0.504.0> exit with reason {socket_error,timeout} in context child_terminated
+2021-05-23 19:37:56.021 [error] <0.502.0> Supervisor {<0.502.0>,amqp_connection_sup} had child connection started with amqp_gen_connection:start_link(<0.503.0>, {amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,...}) at <0.504.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-05-23 21:14:18.133 [error] <0.574.0> CRASH REPORT Process <0.574.0> with 1 neighbours exited with reason: {{{{noproc,{gen_server,call,[<0.515.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.574.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => ...,...}},...},...]}},...},...}
+2021-05-23 21:14:18.151 [error] <0.574.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.573.0> had its request process exit with reason: {{{noproc,{gen_server,call,[<0.515.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.574.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,...}},...},...]}},...}
+2021-05-23 21:14:28.533 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-23 21:14:28.538 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-23 21:14:28.547 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-23 21:14:28.548 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-23 21:14:28.548 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-23 21:14:28.548 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-23 21:14:28.575 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-23 21:14:28.575 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-23 21:14:28.601 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-23 21:14:28.603 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-23 21:14:28.697 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-23 21:14:29.224 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-23 22:27:24.130 [error] <0.504.0> gen_server <0.504.0> terminated with reason: {socket_error,timeout}
+2021-05-23 22:27:24.131 [error] <0.498.0> gen_server <0.498.0> terminated with reason: {socket_error,timeout}
+2021-05-23 22:27:24.180 [error] <0.504.0> CRASH REPORT Process <0.504.0> with 0 neighbours exited with reason: {socket_error,timeout} in gen_server:handle_common_reply/8 line 811
+2021-05-23 22:27:24.180 [error] <0.497.0> Supervisor {<0.497.0>,amqp_connection_type_sup} had child main_reader started with amqp_main_reader:start_link(#Port<0.7>, <0.498.0>, <0.502.0>, {method,rabbit_framing_amqp_0_9_1}, <<"client 127.0.0.1:61274 -> 127.0.0.1:5672">>) at <0.504.0> exit with reason {socket_error,timeout} in context child_terminated
+2021-05-23 22:27:24.180 [error] <0.497.0> Supervisor {<0.497.0>,amqp_connection_type_sup} had child main_reader started with amqp_main_reader:start_link(#Port<0.7>, <0.498.0>, <0.502.0>, {method,rabbit_framing_amqp_0_9_1}, <<"client 127.0.0.1:61274 -> 127.0.0.1:5672">>) at <0.504.0> exit with reason reached_max_restart_intensity in context shutdown
+2021-05-23 22:27:30.575 [error] <0.498.0> CRASH REPORT Process <0.498.0> with 0 neighbours exited with reason: {socket_error,timeout} in gen_server:handle_common_reply/8 line 811
+2021-05-23 22:27:30.575 [error] <0.496.0> Supervisor {<0.496.0>,amqp_connection_sup} had child connection started with amqp_gen_connection:start_link(<0.497.0>, {amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,...}) at <0.498.0> exit with reason {socket_error,timeout} in context child_terminated
+2021-05-23 22:27:30.575 [error] <0.496.0> Supervisor {<0.496.0>,amqp_connection_sup} had child connection started with amqp_gen_connection:start_link(<0.497.0>, {amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,...}) at <0.498.0> exit with reason reached_max_restart_intensity in context shutdown

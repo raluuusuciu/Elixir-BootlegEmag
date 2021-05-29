@@ -1,0 +1,1059 @@
+2021-05-23 14:46:17 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.577.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => publish,message => nil,module => 'Elixir.EventPublisher',reason => nil},[{'Elixir.EventPublisher',publish,[<<"api.login.auth-login.events">>,{<<"1">>,<<"admin">>}],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"4be68263-566f-4eb9-a329-308cfe67ead5">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62311},pid => <0.576.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.577.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"4be68263-566f-4eb9-a329-308cfe67ead5">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.576.0>,<0.465.0>,<0.464.0>,'Elixir.ApiTest.Supervisor',<0.462.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.576.0>,<0.578.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 880
+  neighbours:
+    neighbour: [{pid,<0.578.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.577.0>,<0.576.0>,<0.465.0>,<0.464.0>,'Elixir.ApiTest.Supervisor',<0.462.0>]},{message_queue_len,0},{links,[<0.577.0>]},{trap_exit,false},{status,waiting},{heap_size,610},{stack_size,12},{reductions,3000},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:46:17 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.576.0>, stream 1 had its request process <0.577.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => publish,message => nil,module => 'Elixir.EventPublisher',reason => nil},[{'Elixir.EventPublisher',publish,[<<"api.login.auth-login.events">>,{<<"1">>,<<"admin">>}],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"4be68263-566f-4eb9-a329-308cfe67ead5">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62311},pid => <0.576.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.577.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"4be68263-566f-4eb9-a329-308cfe67ead5">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:46:54 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.498.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,10}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"f55f316a-c137-4cf4-b988-a30cd1d90234">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62357},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"f55f316a-c137-4cf4-b988-a30cd1d90234">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.497.0>,<0.499.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 953
+  neighbours:
+    neighbour: [{pid,<0.499.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.498.0>,<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]},{message_queue_len,0},{links,[<0.498.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,3088},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:46:54 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.497.0>, stream 1 had its request process <0.498.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,10}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"f55f316a-c137-4cf4-b988-a30cd1d90234">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62357},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"f55f316a-c137-4cf4-b988-a30cd1d90234">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:47:41 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.498.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,38}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"f92a5aae-6e94-4350-b6eb-44a541ccf0e2">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62405},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"f92a5aae-6e94-4350-b6eb-44a541ccf0e2">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.497.0>,<0.499.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 941
+  neighbours:
+    neighbour: [{pid,<0.499.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.498.0>,<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]},{message_queue_len,0},{links,[<0.498.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,3088},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:47:41 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.497.0>, stream 1 had its request process <0.498.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.Poison.EncodeError',message => nil,value => {<<"1">>,<<"admin">>}},[{'Elixir.Poison.Encoder.Any',encode,2,[{file,"lib/poison/encoder.ex"},{line,383}]},{'Elixir.Poison','encode!',2,[{file,"lib/poison.ex"},{line,41}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,38}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"f92a5aae-6e94-4350-b6eb-44a541ccf0e2">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62405},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"f92a5aae-6e94-4350-b6eb-44a541ccf0e2">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:48:43 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.498.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 3,function => publish,message => nil,module => 'Elixir.EventBus',reason => nil},[{'Elixir.EventBus',publish,[<<"api.login.auth-login.events">>,<<"{\"name\":\"admin\",\"id\":\"1\"}">>,[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"b466ab23-5419-495e-86b6-861aee6e07ed">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62489},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"b466ab23-5419-495e-86b6-861aee6e07ed">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.497.0>,<0.499.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1063
+  neighbours:
+    neighbour: [{pid,<0.499.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.498.0>,<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]},{message_queue_len,0},{links,[<0.498.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:48:43 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.497.0>, stream 1 had its request process <0.498.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 3,function => publish,message => nil,module => 'Elixir.EventBus',reason => nil},[{'Elixir.EventBus',publish,[<<"api.login.auth-login.events">>,<<"{\"name\":\"admin\",\"id\":\"1\"}">>,[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,36}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"b466ab23-5419-495e-86b6-861aee6e07ed">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62489},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"b466ab23-5419-495e-86b6-861aee6e07ed">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:49:25 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.499.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"03700605-a334-46aa-9a93-bc60e63d4ea0">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62536},pid => <0.498.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.499.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"03700605-a334-46aa-9a93-bc60e63d4ea0">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.498.0>,<0.394.0>,<0.393.0>,'Elixir.ApiTest.Supervisor',<0.391.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.498.0>,<0.500.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1089
+  neighbours:
+    neighbour: [{pid,<0.500.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.499.0>,<0.498.0>,<0.394.0>,<0.393.0>,'Elixir.ApiTest.Supervisor',<0.391.0>]},{message_queue_len,0},{links,[<0.499.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:49:25 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.498.0>, stream 1 had its request process <0.499.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"03700605-a334-46aa-9a93-bc60e63d4ea0">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62536},pid => <0.498.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.499.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"03700605-a334-46aa-9a93-bc60e63d4ea0">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:49:42 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.501.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"254ed8ec-5dcc-4373-8f4c-c953b79d2665">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62536},pid => <0.498.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.501.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"254ed8ec-5dcc-4373-8f4c-c953b79d2665">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.498.0>,<0.394.0>,<0.393.0>,'Elixir.ApiTest.Supervisor',<0.391.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.498.0>,<0.502.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 824
+  neighbours:
+    neighbour: [{pid,<0.502.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.501.0>,<0.498.0>,<0.394.0>,<0.393.0>,'Elixir.ApiTest.Supervisor',<0.391.0>]},{message_queue_len,0},{links,[<0.501.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,2514},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:49:42 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.498.0>, stream 2 had its request process <0.501.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.38358890>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"254ed8ec-5dcc-4373-8f4c-c953b79d2665">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62536},pid => <0.498.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.501.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"254ed8ec-5dcc-4373-8f4c-c953b79d2665">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:51:42 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.505.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.133089409>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"bdf5a1ac-48e9-430c-a56a-cd8d75550914">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62691},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"bdf5a1ac-48e9-430c-a56a-cd8d75550914">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.504.0>,<0.506.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1089
+  neighbours:
+    neighbour: [{pid,<0.506.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.505.0>,<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.505.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,3088},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:51:42 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.504.0>, stream 1 had its request process <0.505.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.133089409>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"bdf5a1ac-48e9-430c-a56a-cd8d75550914">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62691},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"bdf5a1ac-48e9-430c-a56a-cd8d75550914">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:54:30 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.505.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.3309381>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"b5d2928a-25b6-4434-a099-f8442cd7a2aa">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62887},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"b5d2928a-25b6-4434-a099-f8442cd7a2aa">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.504.0>,<0.506.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1089
+  neighbours:
+    neighbour: [{pid,<0.506.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.505.0>,<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.505.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:54:30 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.504.0>, stream 1 had its request process <0.505.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.3309381>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"b5d2928a-25b6-4434-a099-f8442cd7a2aa">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62887},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"b5d2928a-25b6-4434-a099-f8442cd7a2aa">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 14:54:58 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.505.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.105923794>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"269eba6a-a873-4fa1-9802-541a774e5ad6">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62924},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"269eba6a-a873-4fa1-9802-541a774e5ad6">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.504.0>,<0.506.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1089
+  neighbours:
+    neighbour: [{pid,<0.506.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.505.0>,<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.505.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 14:54:59 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.504.0>, stream 1 had its request process <0.505.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.105923794>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"269eba6a-a873-4fa1-9802-541a774e5ad6">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},62924},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"269eba6a-a873-4fa1-9802-541a774e5ad6">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:00:05 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.505.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"d5c1c797-0239-40ba-a02b-e1c173c82294">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},63281},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"d5c1c797-0239-40ba-a02b-e1c173c82294">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.504.0>,<0.506.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1089
+  neighbours:
+    neighbour: [{pid,<0.506.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.505.0>,<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.505.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 15:00:05 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.504.0>, stream 1 had its request process <0.505.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"d5c1c797-0239-40ba-a02b-e1c173c82294">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},63281},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"d5c1c797-0239-40ba-a02b-e1c173c82294">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:03:23 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.388.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.EventPublisher was given as a child to a supervisor but it does not exist.">>},[{'Elixir.Supervisor',init_child,1,[{file,"lib/supervisor.ex"},{line,631}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Supervisor',init,2,[{file,"lib/supervisor.ex"},{line,617}]},{'Elixir.Supervisor',start_link,2,[{file,"lib/supervisor.ex"},{line,556}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.387.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.389.0>,normal}]
+    links: [<0.387.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 204
+  neighbours:
+2021-05-23 15:03:41 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.388.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :permanent,\n        shutdown: 500\n      }\n    end\n\nNote that \"use Agent\", \"use GenServer\" and so on automatically define\nthis function for you.\n\nHowever, if you don't own the given module and it doesn't implement\nchild_spec/1, instead of passing the module name directly as a supervisor\nchild, you will have to pass a child specification as a map:\n\n    %{\n      id: Api.Service.Publisher,\n      start: {Api.Service.Publisher, :start_link, [arg1, arg2]}\n    }\n\nSee the Supervisor documentation for more information.\n">>},[{'Elixir.Supervisor',init_child,1,[{file,"lib/supervisor.ex"},{line,631}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Supervisor',init,2,[{file,"lib/supervisor.ex"},{line,617}]},{'Elixir.Supervisor',start_link,2,[{file,"lib/supervisor.ex"},{line,556}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.387.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.389.0>,normal}]
+    links: [<0.387.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 204
+  neighbours:
+2021-05-23 15:04:27 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :permanent,\n        shutdown: 500\n      }\n    end\n\nNote that \"use Agent\", \"use GenServer\" and so on automatically define\nthis function for you.\n\nHowever, if you don't own the given module and it doesn't implement\nchild_spec/1, instead of passing the module name directly as a supervisor\nchild, you will have to pass a child specification as a map:\n\n    %{\n      id: Api.Service.Publisher,\n      start: {Api.Service.Publisher, :start_link, [arg1, arg2]}\n    }\n\nSee the Supervisor documentation for more information.\n">>},[{'Elixir.Supervisor',init_child,1,[{file,"lib/supervisor.ex"},{line,631}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Supervisor',init,2,[{file,"lib/supervisor.ex"},{line,617}]},{'Elixir.Supervisor',start_link,2,[{file,"lib/supervisor.ex"},{line,556}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 204
+  neighbours:
+2021-05-23 15:04:49 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,5000},{child_type,worker}]
+
+2021-05-23 15:04:49 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 216
+  neighbours:
+2021-05-23 15:06:01 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,5000},{child_type,worker}]
+
+2021-05-23 15:06:01 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:06:17 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"The module Api.Service.Publisher was given as a child to a supervisor\nbut it does not implement child_spec/1.\n\nIf you own the given module, please define a child_spec/1 function\nthat receives an argument and returns a child specification as a map.\nFor example:\n\n    def child_spec(opts) do\n      %{\n        id: __MODULE__,\n        start: {__MODULE__, :start_link, [opts]},\n        type: :worker,\n        restart: :permanent,\n        shutdown: 500\n      }\n    end\n\nNote that \"use Agent\", \"use GenServer\" and so on automatically define\nthis function for you.\n\nHowever, if you don't own the given module and it doesn't implement\nchild_spec/1, instead of passing the module name directly as a supervisor\nchild, you will have to pass a child specification as a map:\n\n    %{\n      id: Api.Service.Publisher,\n      start: {Api.Service.Publisher, :start_link, [arg1, arg2]}\n    }\n\nSee the Supervisor documentation for more information.\n">>},[{'Elixir.Supervisor',init_child,1,[{file,"lib/supervisor.ex"},{line,631}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Enum','-map/2-lists^map/1-0-',2,[{file,"lib/enum.ex"},{line,1553}]},{'Elixir.Supervisor',init,2,[{file,"lib/supervisor.ex"},{line,617}]},{'Elixir.Supervisor',start_link,2,[{file,"lib/supervisor.ex"},{line,556}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 204
+  neighbours:
+2021-05-23 15:07:26 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:07:26 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:08:12 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:08:12 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:09:04 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     ok
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:09:33 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:09:33 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.390.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.389.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.391.0>,normal}]
+    links: [<0.389.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:09:49 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:11:22 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.503.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"912bda55-7ca5-4af5-90d1-9473e722379c">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64045},pid => <0.502.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.503.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"912bda55-7ca5-4af5-90d1-9473e722379c">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.502.0>,<0.398.0>,<0.397.0>,'Elixir.ApiTest.Supervisor',<0.395.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.502.0>,<0.504.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 882
+  neighbours:
+    neighbour: [{pid,<0.504.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.503.0>,<0.502.0>,<0.398.0>,<0.397.0>,'Elixir.ApiTest.Supervisor',<0.395.0>]},{message_queue_len,0},{links,[<0.503.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,12},{reductions,32},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 15:11:22 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.502.0>, stream 1 had its request process <0.503.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"912bda55-7ca5-4af5-90d1-9473e722379c">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64045},pid => <0.502.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.503.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"912bda55-7ca5-4af5-90d1-9473e722379c">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:12:46 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.505.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"7188f5db-2885-4fd3-a274-d9998171f0eb">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64134},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"7188f5db-2885-4fd3-a274-d9998171f0eb">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.504.0>,<0.506.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 928
+  neighbours:
+    neighbour: [{pid,<0.506.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.505.0>,<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.505.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,12},{reductions,32},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 15:12:46 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.504.0>, stream 1 had its request process <0.505.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => start_link,message => nil,module => 'Elixir.Api.Service.Publisher',reason => nil},[{'Elixir.Api.Service.Publisher',start_link,[],[]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]},{cowboy_stream_h,request_process,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,291}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"7188f5db-2885-4fd3-a274-d9998171f0eb">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64134},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"7188f5db-2885-4fd3-a274-d9998171f0eb">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:13:38 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.505.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"errors were found at the given arguments:\n\n  * 1st argument: not a bitstring\n">>},[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"e55033b9-b398-4eba-8678-92cb5ca3fc27">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64207},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"e55033b9-b398-4eba-8678-92cb5ca3fc27">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.504.0>,<0.506.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1020
+  neighbours:
+    neighbour: [{pid,<0.506.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.505.0>,<0.504.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.505.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,12},{reductions,32},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 15:13:38 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.504.0>, stream 1 had its request process <0.505.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"errors were found at the given arguments:\n\n  * 1st argument: not a bitstring\n">>},[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,33}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"e55033b9-b398-4eba-8678-92cb5ca3fc27">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64207},pid => <0.504.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.505.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"e55033b9-b398-4eba-8678-92cb5ca3fc27">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:14:14 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,390}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:14:14 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.394.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,390}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.393.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.395.0>,normal}]
+    links: [<0.393.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 212
+  neighbours:
+2021-05-23 15:14:30 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:14:30 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.390.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.389.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.391.0>,normal}]
+    links: [<0.389.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:15:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:15:13 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.376.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.375.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.377.0>,normal}]
+    links: [<0.375.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:15:20 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,390}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:15:20 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.390.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{undef,[{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,390}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.389.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.391.0>,normal}]
+    links: [<0.389.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 212
+  neighbours:
+2021-05-23 15:15:35 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[[{app_id,api_test}]]}},{restart_type,permanent},{significant,false},{shutdown,500},{child_type,worker}]
+
+2021-05-23 15:15:35 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.390.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.389.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.391.0>,normal}]
+    links: [<0.389.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:16:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{'Elixir.Helios.Service.EventPublisher',start_link,[{app_id,helios}],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,390}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Helios.Service.EventPublisher'},{mfargs,{'Elixir.Helios.Service.EventPublisher',start_link,[{app_id,helios}]}},{restart_type,permanent},{significant,false},{shutdown,5000},{child_type,worker}]
+
+2021-05-23 15:16:24 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[{app_id,helios}]}},{restart_type,permanent},{significant,false},{shutdown,5000},{child_type,worker}]
+
+2021-05-23 15:16:24 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.388.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Api.Service.Publisher',{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}}},{'Elixir.ApiTest.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.387.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.389.0>,normal}]
+    links: [<0.387.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 213
+  neighbours:
+2021-05-23 15:16:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ApiTest.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,414}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,400}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,384}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1234}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,350}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,423}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Api.Service.Publisher'},{mfargs,{'Elixir.Api.Service.Publisher',start_link,[{app_id,helios}]}},{restart_type,permanent},{significant,false},{shutdown,5000},{child_type,worker}]
+
+2021-05-23 15:24:03 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.515.0>
+    registered_name: []
+    exception exit: {{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"argument error">>},[{erlang,'++',[#{id => <<"1">>,name => <<"admin">>},[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,11}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,37}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"c68138d4-db89-4d48-abc9-7a604be3cecd">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64906},pid => <0.514.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.515.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"c68138d4-db89-4d48-abc9-7a604be3cecd">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.514.0>,<0.410.0>,<0.409.0>,'Elixir.ApiTest.Supervisor',<0.407.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.516.0>,<0.517.0>,<0.514.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1022
+  neighbours:
+    neighbour: [{pid,<0.517.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.515.0>,<0.514.0>,<0.410.0>,<0.409.0>,'Elixir.ApiTest.Supervisor',<0.407.0>]},{message_queue_len,0},{links,[<0.515.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,12},{reductions,32},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+    neighbour: [{pid,<0.516.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.515.0>,<0.514.0>,<0.410.0>,<0.409.0>,'Elixir.ApiTest.Supervisor',<0.407.0>]},{message_queue_len,0},{links,[<0.515.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,3075},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 15:24:03 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.514.0>, stream 1 had its request process <0.515.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"argument error">>},[{erlang,'++',[#{id => <<"1">>,name => <<"admin">>},[{app_id,<<"auth_service">>},{content_type,<<"application/json">>},{persistent,true}]],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',publish,3,[{file,"lib/services/publisher.ex"},{line,11}]},{'Elixir.Api.Router','-do_match/4-fun-1-',2,[{file,"lib/api_test/router.ex"},{line,37}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_handler.erl"},{line,37}]},{cowboy_stream_h,execute,3,[{file,"/Users/cat/Documents/elixir/ex4/no_crud/deps/cowboy/src/cowboy_stream_h.erl"},{line,300}]}]},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"c68138d4-db89-4d48-abc9-7a604be3cecd">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},64906},pid => <0.514.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.515.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"c68138d4-db89-4d48-abc9-7a604be3cecd">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:25:46 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.498.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"865cb0f4-4401-438b-8d2c-d0c7691fdf46">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},65020},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"865cb0f4-4401-438b-8d2c-d0c7691fdf46">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.499.0>,<0.500.0>,<0.497.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1058
+  neighbours:
+    neighbour: [{pid,<0.500.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.498.0>,<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]},{message_queue_len,0},{links,[<0.498.0>]},{trap_exit,false},{status,waiting},{heap_size,233},{stack_size,12},{reductions,32},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+    neighbour: [{pid,<0.499.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.498.0>,<0.497.0>,<0.393.0>,<0.392.0>,'Elixir.ApiTest.Supervisor',<0.390.0>]},{message_queue_len,0},{links,[<0.498.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 15:25:46 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.497.0>, stream 1 had its request process <0.498.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"865cb0f4-4401-438b-8d2c-d0c7691fdf46">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},65020},pid => <0.497.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.498.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"865cb0f4-4401-438b-8d2c-d0c7691fdf46">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:28:33 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.510.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"d455ee62-3e6a-4fd3-b2fd-aec1cb72d234">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},65231},pid => <0.509.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.510.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"d455ee62-3e6a-4fd3-b2fd-aec1cb72d234">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.509.0>,<0.405.0>,<0.404.0>,'Elixir.ApiTest.Supervisor',<0.402.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.509.0>,<0.511.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 978
+  neighbours:
+    neighbour: [{pid,<0.511.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.510.0>,<0.509.0>,<0.405.0>,<0.404.0>,'Elixir.ApiTest.Supervisor',<0.402.0>]},{message_queue_len,0},{links,[<0.510.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 15:28:33 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.509.0>, stream 1 had its request process <0.510.0> exit with reason {{noproc,{'Elixir.GenServer',call,[event_bus_helper_state,{get,#Fun<Elixir.Api.Helpers.EventBus.0.84346287>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"d455ee62-3e6a-4fd3-b2fd-aec1cb72d234">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},65231},pid => <0.509.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.510.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"d455ee62-3e6a-4fd3-b2fd-aec1cb72d234">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 15:30:40 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.395.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{undef,[{'Elixir.Api.Service.EventPublisher',start,[],[]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.394.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.396.0>,normal}]
+    links: [<0.394.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 201
+  neighbours:
+2021-05-23 15:31:01 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.388.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.387.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.389.0>,normal}]
+    links: [<0.387.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 190
+  neighbours:
+2021-05-23 15:31:37 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 190
+  neighbours:
+2021-05-23 15:32:15 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 194
+  neighbours:
+2021-05-23 15:32:23 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{badarg,[{erlang,byte_size,[nil],[{error_info,#{module => erl_erts_errors}}]},{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 29
+    reductions: 190
+  neighbours:
+2021-05-23 15:33:13 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.396.0>
+    registered_name: []
+    exception exit: {{bad_return,{{'Elixir.ApiTest.Application',start,[normal,[]]},{'EXIT',{{badmatch,{error,{auth_failure,"ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile."}}},[{'Elixir.Api.Service.Publisher',start,2,[{file,"lib/services/publisher.ex"},{line,2}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,293}]}]}}}},[{application_master,init,4,[{file,"application_master.erl"},{line,142}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.395.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.397.0>,normal}]
+    links: [<0.395.0>,<0.44.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 29
+    reductions: 211
+  neighbours:
+2021-05-23 16:07:27 =ERROR REPORT====
+** Generic server <0.509.0> terminating 
+** Last message in was {timeout,#Ref<0.2624388302.2521563137.104169>,idle_timeout}
+** When Server state == {state,#Port<0.7>,#Ref<0.2624388302.2521563137.104169>,<0.503.0>,<0.507.0>,{method,rabbit_framing_amqp_0_9_1},{expecting_header,<<>>}}
+** Reason for termination ==
+** {socket_error,timeout}
+2021-05-23 16:07:33 =ERROR REPORT====
+** Generic server <0.503.0> terminating 
+** Last message in was {socket_error,timeout}
+** When Server state == {state,amqp_network_connection,{state,#Port<0.7>,<<"client 127.0.0.1:49434 -> 127.0.0.1:5672">>,10,<0.508.0>,131072,<0.502.0>,undefined,false},<0.507.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]},2047,[{<<"capabilities">>,table,[{<<"publisher_confirms">>,bool,true},{<<"exchange_exchange_bindings">>,bool,true},{<<"basic.nack">>,bool,true},{<<"consumer_cancel_notify">>,bool,true},{<<"connection.blocked">>,bool,true},{<<"consumer_priorities">>,bool,true},{<<"authentication_failure_close">>,bool,true},{<<"per_consumer_qos">>,bool,true},{<<"direct_reply_to">>,bool,true}]},{<<"cluster_name">>,longstr,<<"rabbit@darkstar-2">>},{<<"copyright">>,longstr,<<"Copyright (c) 2007-2021 VMware, Inc. or its affiliates.">>},{<<"information">>,longstr,<<"Licensed under the MPL 2.0. Website: https://rabbitmq.com">>},{<<"platform">>,longstr,<<"Erlang/OTP 24.0.1">>},{<<"product">>,longstr,<<"RabbitMQ">>},{<<"version">>,longstr,<<"3.8.16">>}],none,false}
+** Reason for termination ==
+** {socket_error,timeout}
+2021-05-23 16:07:33 =CRASH REPORT====
+  crasher:
+    initial call: amqp_main_reader:init/1
+    pid: <0.509.0>
+    registered_name: []
+    exception exit: {{socket_error,timeout},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,811}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.502.0>,<0.501.0>,amqp_sup,<0.388.0>]
+    message_queue_len: 1
+    messages: [{tcp,#Port<0.7>,<<8,0,0,0,0,0,0,206>>}]
+    links: [<0.502.0>,#Port<0.7>]
+    dictionary: [{gen_server_call_timeout,70000},{process_name,{amqp_main_reader,<<"client 127.0.0.1:49434 -> 127.0.0.1:5672">>}}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 29
+    reductions: 4616
+  neighbours:
+2021-05-23 16:07:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.502.0>,amqp_connection_type_sup}
+     Context:    child_terminated
+     Reason:     {socket_error,timeout}
+     Offender:   [{pid,<0.509.0>},{id,main_reader},{mfargs,{amqp_main_reader,start_link,[#Port<0.7>,<0.503.0>,<0.507.0>,{method,rabbit_framing_amqp_0_9_1},<<"client 127.0.0.1:49434 -> 127.0.0.1:5672">>]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2021-05-23 16:07:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.502.0>,amqp_connection_type_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.509.0>},{id,main_reader},{mfargs,{amqp_main_reader,start_link,[#Port<0.7>,<0.503.0>,<0.507.0>,{method,rabbit_framing_amqp_0_9_1},<<"client 127.0.0.1:49434 -> 127.0.0.1:5672">>]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2021-05-23 16:07:33 =CRASH REPORT====
+  crasher:
+    initial call: amqp_gen_connection:init/1
+    pid: <0.503.0>
+    registered_name: []
+    exception exit: {{socket_error,timeout},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,811}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.501.0>,amqp_sup,<0.388.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.501.0>]
+    dictionary: [{gen_server_call_timeout,70000},{process_name,{amqp_gen_connection,<<"client 127.0.0.1:49434 -> 127.0.0.1:5672">>}}]
+    trap_exit: true
+    status: running
+    heap_size: 4185
+    stack_size: 29
+    reductions: 14033
+  neighbours:
+2021-05-23 16:07:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.501.0>,amqp_connection_sup}
+     Context:    child_terminated
+     Reason:     {socket_error,timeout}
+     Offender:   [{pid,<0.503.0>},{id,connection},{mfargs,{amqp_gen_connection,start_link,[<0.502.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
+2021-05-23 16:07:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.501.0>,amqp_connection_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.503.0>},{id,connection},{mfargs,{amqp_gen_connection,start_link,[<0.502.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
+2021-05-23 19:09:30 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.565.0>
+    registered_name: []
+    exception exit: {{{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.565.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"0999c87f-b7be-4aa3-a915-1ed309743cf3">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},58845},pid => <0.564.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.565.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"0999c87f-b7be-4aa3-a915-1ed309743cf3">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.564.0>,<0.399.0>,<0.398.0>,'Elixir.ApiTest.Supervisor',<0.396.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.564.0>,<0.566.0>]
+    dictionary: [{gen_server_call_timeout,70000}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 995
+  neighbours:
+    neighbour: [{pid,<0.566.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.565.0>,<0.564.0>,<0.399.0>,<0.398.0>,'Elixir.ApiTest.Supervisor',<0.396.0>]},{message_queue_len,0},{links,[<0.565.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,2513},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 19:09:30 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.564.0>, stream 1 had its request process <0.565.0> exit with reason {{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.565.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"0999c87f-b7be-4aa3-a915-1ed309743cf3">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},58845},pid => <0.564.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.565.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"0999c87f-b7be-4aa3-a915-1ed309743cf3">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 19:09:31 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.567.0>
+    registered_name: []
+    exception exit: {{{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.567.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"7423810e-c745-4c6d-a7b5-22e763df97fc">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},58845},pid => <0.564.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.567.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"7423810e-c745-4c6d-a7b5-22e763df97fc">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.564.0>,<0.399.0>,<0.398.0>,'Elixir.ApiTest.Supervisor',<0.396.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.564.0>,<0.568.0>]
+    dictionary: [{gen_server_call_timeout,70000}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 979
+  neighbours:
+    neighbour: [{pid,<0.568.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.567.0>,<0.564.0>,<0.399.0>,<0.398.0>,'Elixir.ApiTest.Supervisor',<0.396.0>]},{message_queue_len,0},{links,[<0.567.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,2513},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 19:09:31 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.564.0>, stream 2 had its request process <0.567.0> exit with reason {{noproc,{gen_server,call,[<0.514.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.567.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"7423810e-c745-4c6d-a7b5-22e763df97fc">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},58845},pid => <0.564.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.567.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"7423810e-c745-4c6d-a7b5-22e763df97fc">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 19:10:34 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.521.0>
+    registered_name: []
+    exception exit: {{{noproc,{'Elixir.GenServer',call,[bus_tate,{get,#Fun<Elixir.Api.Helpers.EventBus.0.30129231>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"a9372d90-93b5-4d5e-be3a-92b1707fe0b2">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},58928},pid => <0.520.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.521.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"a9372d90-93b5-4d5e-be3a-92b1707fe0b2">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.520.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.520.0>,<0.522.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 1089
+  neighbours:
+    neighbour: [{pid,<0.522.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.521.0>,<0.520.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.521.0>]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,12},{reductions,3109},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 19:10:34 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.520.0>, stream 1 had its request process <0.521.0> exit with reason {{noproc,{'Elixir.GenServer',call,[bus_tate,{get,#Fun<Elixir.Api.Helpers.EventBus.0.30129231>},5000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"a9372d90-93b5-4d5e-be3a-92b1707fe0b2">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},58928},pid => <0.520.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.521.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"a9372d90-93b5-4d5e-be3a-92b1707fe0b2">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 19:37:49 =ERROR REPORT====
+** Generic server <0.510.0> terminating 
+** Last message in was {timeout,#Ref<0.918353780.4165730305.236492>,idle_timeout}
+** When Server state == {state,#Port<0.7>,#Ref<0.918353780.4165730305.236492>,<0.504.0>,<0.508.0>,{method,rabbit_framing_amqp_0_9_1},{expecting_header,<<>>}}
+** Reason for termination ==
+** {socket_error,timeout}
+2021-05-23 19:37:54 =ERROR REPORT====
+** Generic server <0.504.0> terminating 
+** Last message in was {socket_error,timeout}
+** When Server state == {state,amqp_network_connection,{state,#Port<0.7>,<<"client 127.0.0.1:58949 -> 127.0.0.1:5672">>,10,<0.509.0>,131072,<0.503.0>,undefined,false},<0.508.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]},2047,[{<<"capabilities">>,table,[{<<"publisher_confirms">>,bool,true},{<<"exchange_exchange_bindings">>,bool,true},{<<"basic.nack">>,bool,true},{<<"consumer_cancel_notify">>,bool,true},{<<"connection.blocked">>,bool,true},{<<"consumer_priorities">>,bool,true},{<<"authentication_failure_close">>,bool,true},{<<"per_consumer_qos">>,bool,true},{<<"direct_reply_to">>,bool,true}]},{<<"cluster_name">>,longstr,<<"rabbit@darkstar-2">>},{<<"copyright">>,longstr,<<"Copyright (c) 2007-2021 VMware, Inc. or its affiliates.">>},{<<"information">>,longstr,<<"Licensed under the MPL 2.0. Website: https://rabbitmq.com">>},{<<"platform">>,longstr,<<"Erlang/OTP 24.0.1">>},{<<"product">>,longstr,<<"RabbitMQ">>},{<<"version">>,longstr,<<"3.8.16">>}],none,false}
+** Reason for termination ==
+** {socket_error,timeout}
+2021-05-23 19:37:54 =CRASH REPORT====
+  crasher:
+    initial call: amqp_main_reader:init/1
+    pid: <0.510.0>
+    registered_name: []
+    exception exit: {{socket_error,timeout},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,811}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.503.0>,<0.502.0>,amqp_sup,<0.389.0>]
+    message_queue_len: 1
+    messages: [{tcp,#Port<0.7>,<<8,0,0,0,0,0,0,206>>}]
+    links: [<0.503.0>,#Port<0.7>]
+    dictionary: [{process_name,{amqp_main_reader,<<"client 127.0.0.1:58949 -> 127.0.0.1:5672">>}},{gen_server_call_timeout,70000}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 22197
+  neighbours:
+2021-05-23 19:37:54 =SUPERVISOR REPORT====
+     Supervisor: {<0.503.0>,amqp_connection_type_sup}
+     Context:    child_terminated
+     Reason:     {socket_error,timeout}
+     Offender:   [{pid,<0.510.0>},{id,main_reader},{mfargs,{amqp_main_reader,start_link,[#Port<0.7>,<0.504.0>,<0.508.0>,{method,rabbit_framing_amqp_0_9_1},<<"client 127.0.0.1:58949 -> 127.0.0.1:5672">>]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2021-05-23 19:37:54 =SUPERVISOR REPORT====
+     Supervisor: {<0.503.0>,amqp_connection_type_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.510.0>},{id,main_reader},{mfargs,{amqp_main_reader,start_link,[#Port<0.7>,<0.504.0>,<0.508.0>,{method,rabbit_framing_amqp_0_9_1},<<"client 127.0.0.1:58949 -> 127.0.0.1:5672">>]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2021-05-23 19:37:56 =CRASH REPORT====
+  crasher:
+    initial call: amqp_gen_connection:init/1
+    pid: <0.504.0>
+    registered_name: []
+    exception exit: {{socket_error,timeout},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,811}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.502.0>,amqp_sup,<0.389.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.502.0>]
+    dictionary: [{process_name,{amqp_gen_connection,<<"client 127.0.0.1:58949 -> 127.0.0.1:5672">>}},{gen_server_call_timeout,70000}]
+    trap_exit: true
+    status: running
+    heap_size: 4185
+    stack_size: 29
+    reductions: 14033
+  neighbours:
+2021-05-23 19:37:56 =SUPERVISOR REPORT====
+     Supervisor: {<0.502.0>,amqp_connection_sup}
+     Context:    child_terminated
+     Reason:     {socket_error,timeout}
+     Offender:   [{pid,<0.504.0>},{id,connection},{mfargs,{amqp_gen_connection,start_link,[<0.503.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
+2021-05-23 19:37:56 =SUPERVISOR REPORT====
+     Supervisor: {<0.502.0>,amqp_connection_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.504.0>},{id,connection},{mfargs,{amqp_gen_connection,start_link,[<0.503.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
+2021-05-23 21:14:18 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.574.0>
+    registered_name: []
+    exception exit: {{{noproc,{gen_server,call,[<0.515.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.574.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"23eb36dc-3f92-4587-a829-e1bc829b82c7">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},61261},pid => <0.573.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.574.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"23eb36dc-3f92-4587-a829-e1bc829b82c7">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[]}
+    ancestors: [<0.573.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.573.0>,<0.575.0>]
+    dictionary: [{gen_server_call_timeout,70000}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 995
+  neighbours:
+    neighbour: [{pid,<0.575.0>},{registered_name,[]},{initial_call,{'Elixir.Api.Service.Auth',init,['Argument__1']}},{current_function,{gen_server,loop,7}},{ancestors,[<0.574.0>,<0.573.0>,<0.400.0>,<0.399.0>,'Elixir.ApiTest.Supervisor',<0.397.0>]},{message_queue_len,0},{links,[<0.574.0>]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,12},{reductions,2513},{current_stacktrace,[{gen_server,loop,7,[{file,"gen_server.erl"},{line,443}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}]
+2021-05-23 21:14:18 =ERROR REPORT====
+Ranch listener 'Elixir.Api.Router.HTTP', connection process <0.573.0>, stream 1 had its request process <0.574.0> exit with reason {{noproc,{gen_server,call,[<0.515.0>,{call,{'basic.publish',0,<<"my_api">>,<<"api.login.auth-login.events">>,false,false},{amqp_msg,{'P_basic',<<"application/json">>,undefined,undefined,2,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,<<"auth_service">>,undefined},<<"{\"name\":\"admin\",\"id\":\"1\"}">>},<0.574.0>},70000]}},{'Elixir.Api.Router',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"23eb36dc-3f92-4587-a829-e1bc829b82c7">>,<<"user-agent">> => <<"PostmanRuntime/7.26.10">>},host => <<"localhost">>,host_info => undefined,method => <<"POST">>,path => <<"/login">>,path_info => undefined,peer => {{127,0,0,1},61261},pid => <0.573.0>,port => 4000,qs => <<"name=admin&password=admin&id=1">>,ref => 'Elixir.Api.Router.HTTP',scheme => <<"http">>,sock => {{127,0,0,1},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"localhost">>,method => <<"POST">>,owner => <0.574.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"login">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<"name=admin&password=admin&id=1">>,remote_ip => {127,0,0,1},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate, br">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"0">>},{<<"host">>,<<"localhost:4000">>},{<<"postman-token">>,<<"23eb36dc-3f92-4587-a829-e1bc829b82c7">>},{<<"user-agent">>,<<"PostmanRuntime/7.26.10">>}],request_path => <<"/login">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace []
+2021-05-23 22:27:24 =ERROR REPORT====
+** Generic server <0.504.0> terminating 
+** Last message in was {timeout,#Ref<0.459349506.1768685570.124781>,idle_timeout}
+** When Server state == {state,#Port<0.7>,#Ref<0.459349506.1768685570.124781>,<0.498.0>,<0.502.0>,{method,rabbit_framing_amqp_0_9_1},{expecting_header,<<>>}}
+** Reason for termination ==
+** {socket_error,timeout}
+2021-05-23 22:27:29 =ERROR REPORT====
+** Generic server <0.498.0> terminating 
+** Last message in was {socket_error,timeout}
+** When Server state == {state,amqp_network_connection,{state,#Port<0.7>,<<"client 127.0.0.1:61274 -> 127.0.0.1:5672">>,10,<0.503.0>,131072,<0.497.0>,undefined,false},<0.502.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]},2047,[{<<"capabilities">>,table,[{<<"publisher_confirms">>,bool,true},{<<"exchange_exchange_bindings">>,bool,true},{<<"basic.nack">>,bool,true},{<<"consumer_cancel_notify">>,bool,true},{<<"connection.blocked">>,bool,true},{<<"consumer_priorities">>,bool,true},{<<"authentication_failure_close">>,bool,true},{<<"per_consumer_qos">>,bool,true},{<<"direct_reply_to">>,bool,true}]},{<<"cluster_name">>,longstr,<<"rabbit@darkstar-2">>},{<<"copyright">>,longstr,<<"Copyright (c) 2007-2021 VMware, Inc. or its affiliates.">>},{<<"information">>,longstr,<<"Licensed under the MPL 2.0. Website: https://rabbitmq.com">>},{<<"platform">>,longstr,<<"Erlang/OTP 24.0.1">>},{<<"product">>,longstr,<<"RabbitMQ">>},{<<"version">>,longstr,<<"3.8.16">>}],none,false}
+** Reason for termination ==
+** {socket_error,timeout}
+2021-05-23 22:27:29 =CRASH REPORT====
+  crasher:
+    initial call: amqp_main_reader:init/1
+    pid: <0.504.0>
+    registered_name: []
+    exception exit: {{socket_error,timeout},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,811}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.497.0>,<0.496.0>,amqp_sup,<0.383.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.497.0>,#Port<0.7>]
+    dictionary: [{gen_server_call_timeout,70000},{process_name,{amqp_main_reader,<<"client 127.0.0.1:61274 -> 127.0.0.1:5672">>}}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 29
+    reductions: 84778
+  neighbours:
+2021-05-23 22:27:29 =SUPERVISOR REPORT====
+     Supervisor: {<0.497.0>,amqp_connection_type_sup}
+     Context:    child_terminated
+     Reason:     {socket_error,timeout}
+     Offender:   [{pid,<0.504.0>},{id,main_reader},{mfargs,{amqp_main_reader,start_link,[#Port<0.7>,<0.498.0>,<0.502.0>,{method,rabbit_framing_amqp_0_9_1},<<"client 127.0.0.1:61274 -> 127.0.0.1:5672">>]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2021-05-23 22:27:29 =SUPERVISOR REPORT====
+     Supervisor: {<0.497.0>,amqp_connection_type_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.504.0>},{id,main_reader},{mfargs,{amqp_main_reader,start_link,[#Port<0.7>,<0.498.0>,<0.502.0>,{method,rabbit_framing_amqp_0_9_1},<<"client 127.0.0.1:61274 -> 127.0.0.1:5672">>]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2021-05-23 22:27:30 =CRASH REPORT====
+  crasher:
+    initial call: amqp_gen_connection:init/1
+    pid: <0.498.0>
+    registered_name: []
+    exception exit: {{socket_error,timeout},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,811}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+    ancestors: [<0.496.0>,amqp_sup,<0.383.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.496.0>]
+    dictionary: [{gen_server_call_timeout,70000},{process_name,{amqp_gen_connection,<<"client 127.0.0.1:61274 -> 127.0.0.1:5672">>}}]
+    trap_exit: true
+    status: running
+    heap_size: 4185
+    stack_size: 29
+    reductions: 14035
+  neighbours:
+2021-05-23 22:27:30 =SUPERVISOR REPORT====
+     Supervisor: {<0.496.0>,amqp_connection_sup}
+     Context:    child_terminated
+     Reason:     {socket_error,timeout}
+     Offender:   [{pid,<0.498.0>},{id,connection},{mfargs,{amqp_gen_connection,start_link,[<0.497.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
+2021-05-23 22:27:30 =SUPERVISOR REPORT====
+     Supervisor: {<0.496.0>,amqp_connection_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.498.0>},{id,connection},{mfargs,{amqp_gen_connection,start_link,[<0.497.0>,{amqp_params_network,<<"guest">>,{plaintext,<<"guest">>},<<"/">>,"localhost",5672,2047,0,10,60000,none,[#Fun<amqp_uri.9.119094577>,#Fun<amqp_uri.9.119094577>],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
