@@ -3,6 +3,8 @@ defmodule Api.Router do
 
     alias Api.Views.UserEventView
     alias Api.Views.ProductEventView
+    alias Api.Models.UserEvent
+    alias Api.Models.ProductEvent
     alias Api.Plugs.JsonTestPlug
 
     @routing_keys Application.get_env(:api_test, :routing_keys)
