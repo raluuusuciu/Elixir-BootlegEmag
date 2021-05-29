@@ -1,0 +1,377 @@
+2021-05-24 17:28:15.494 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 17:28:15.501 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 17:28:15.514 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 17:28:15.514 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 17:28:15.514 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 17:28:15.515 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 17:28:15.542 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 17:28:15.542 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 17:28:15.568 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 17:28:15.571 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 17:28:15.881 [warning] <0.377.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 17:28:16.497 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 17:59:32.860 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 17:59:32.865 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 17:59:32.870 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 17:59:32.870 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 17:59:32.870 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 17:59:32.870 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 17:59:32.881 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 17:59:32.881 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 17:59:32.893 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 17:59:32.894 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 17:59:32.945 [warning] <0.376.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 17:59:33.023 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:03:43.105 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:03:43.112 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:03:43.118 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:03:43.118 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:03:43.118 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:03:43.119 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:03:43.134 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:03:43.134 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:03:43.150 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:03:43.152 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:03:43.214 [warning] <0.461.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:03:43.339 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:20:46.441 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:20:46.449 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:20:46.456 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:20:46.456 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:20:46.456 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:20:46.456 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:20:46.471 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:20:46.471 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:20:46.482 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:20:46.484 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:20:46.484 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:20:46.524 [warning] <0.549.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:20:46.610 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:23:52.285 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:23:52.290 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:23:52.295 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:23:52.295 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:23:52.295 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:23:52.295 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:23:52.306 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:23:52.306 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:23:52.318 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:23:52.319 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:23:52.320 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:23:52.368 [warning] <0.398.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:23:52.455 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:24:05.280 [error] <0.522.0> CRASH REPORT Process <0.522.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => insert,message => nil,module => ets,reason => nil},[{ets,insert,[],[]},{'Elixir.Api.DB.UserRepository',add,1,[{file,"lib/db/user_repository.ex"},{line,3}]},{'Elixir.Api.Router','-do_match/4-fun-3-',2,[{file,"lib/api_test/router.ex"},{line,72}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},...]},...]},...},...},...}
+2021-05-24 18:24:05.392 [error] <0.522.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.521.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 0,function => insert,message => nil,module => ets,reason => nil},[{ets,insert,[],[]},{'Elixir.Api.DB.UserRepository',add,1,[{file,"lib/db/user_repository.ex"},{line,3}]},{'Elixir.Api.Router','-do_match/4-fun-3-',2,[{file,"lib/api_test/router.ex"},{line,72}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{...}]},...]},...},...}
+2021-05-24 18:25:57.607 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:25:57.612 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:25:57.617 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:25:57.617 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:25:57.617 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:25:57.617 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:25:57.628 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:25:57.628 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:25:57.637 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:25:57.638 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:25:57.638 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:25:57.689 [warning] <0.392.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:25:57.770 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:26:17.706 [error] <0.516.0> CRASH REPORT Process <0.516.0> with 0 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"argument error">>},[{ets,insert,[users,{<<"ee888ead-8684-4ce7-864c-9f258a968936">>,#{'__struct__' => 'Elixir.Api.Models.User',id => <<"ee888ead-8684-4ce7-864c-9f258a968936">>,name => <<"wow">>,password => <<"admin">>}}],[]},{'Elixir.Api.DB.UserRepository',add,1,[{file,"lib/db/user_repository.ex"},{line,3}]},{'Elixir.Api.Router','-do_match/4-fun-3-',2,[{file,"lib/api_test/router.ex"},{line,72}]},{'Elixir.Api.Router',...},...]},...},...},...}
+2021-05-24 18:26:17.710 [error] <0.516.0> Cowboy stream 1 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.515.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"argument error">>},[{ets,insert,[users,{<<"ee888ead-8684-4ce7-864c-9f258a968936">>,#{'__struct__' => 'Elixir.Api.Models.User',id => <<"ee888ead-8684-4ce7-864c-9f258a968936">>,name => <<"wow">>,password => <<"admin">>}}],[]},{'Elixir.Api.DB.UserRepository',add,1,[{file,"lib/db/user_repository.ex"},{line,3}]},{'Elixir.Api.Router','-do_match/4-fun-3-',2,[{file,"lib/api_test/router.ex"},{line,72}]},{'Elixir.Api.Router',...},...]},...},...}
+2021-05-24 18:28:20.937 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:28:20.942 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:28:20.947 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:28:20.947 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:28:20.947 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:28:20.947 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:28:20.958 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:28:20.958 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:28:20.968 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:28:20.970 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:28:20.970 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:28:21.025 [warning] <0.390.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:28:21.114 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:36:34.960 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:36:34.964 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:36:34.969 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:36:34.969 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:36:34.969 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:36:34.969 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:36:34.980 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:36:34.980 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:36:34.989 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:36:34.990 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:36:34.990 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:36:35.034 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:36:35.115 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:44:41.193 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:44:41.198 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:44:41.204 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:44:41.204 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:44:41.204 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:44:41.204 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:44:41.220 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:44:41.220 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:44:41.234 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:44:41.236 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:44:41.236 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:44:41.317 [warning] <0.397.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:44:41.400 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:46:25.142 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:46:25.147 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:46:25.152 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:46:25.152 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:46:25.152 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:46:25.152 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:46:25.163 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:46:25.163 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:46:25.176 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:46:25.178 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:46:25.178 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:46:25.227 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:46:25.300 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:47:47.348 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:47:47.353 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:47:47.359 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:47:47.359 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:47:47.359 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:47:47.359 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:47:47.371 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:47:47.371 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:47:47.382 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:47:47.384 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:47:47.384 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:47:47.430 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:47:47.509 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 18:51:46.919 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 18:51:46.926 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 18:51:46.932 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 18:51:46.932 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 18:51:46.932 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 18:51:46.932 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 18:51:46.944 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 18:51:46.944 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 18:51:46.955 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 18:51:46.956 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 18:51:46.957 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 18:51:46.997 [warning] <0.475.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 18:51:47.086 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:24:10.636 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:24:10.642 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:24:10.647 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:24:10.647 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:24:10.647 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:24:10.647 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:24:10.659 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:24:10.659 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:24:10.672 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:24:10.674 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:24:10.674 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:24:10.724 [warning] <0.397.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:24:10.814 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:24:35.166 [error] <0.524.0> CRASH REPORT Process <0.524.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,109}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/De..."},...]},...]},...},...},...}
+2021-05-24 19:24:35.169 [error] <0.524.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.520.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,109}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desk..."},...]},...]},...},...}
+2021-05-24 19:25:17.727 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:25:17.732 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:25:17.737 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:25:17.737 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:25:17.737 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:25:17.737 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:25:17.749 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:25:17.749 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:25:17.760 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:25:17.761 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:25:17.762 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:25:17.803 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:25:17.876 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:27:39.473 [error] <0.522.0> CRASH REPORT Process <0.522.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => assign,message => nil,term => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"4fa50575-7029-4825-8ee2-d...">>,...},...}},...}},...},...},...},...}
+2021-05-24 19:27:39.475 [error] <0.522.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.517.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => assign,message => nil,term => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"4fa50575-7029-4825-8ee2-dc6...">>,...},...}},...}},...},...},...}
+2021-05-24 19:28:45.271 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:28:45.275 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:28:45.281 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:28:45.281 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:28:45.281 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:28:45.281 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:28:45.292 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:28:45.292 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:28:45.303 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:28:45.304 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:28:45.304 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:28:45.345 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:28:45.418 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:28:58.695 [error] <0.518.0> CRASH REPORT Process <0.518.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => assign,message => nil,term => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"fa240ae6-5c0d-41b1-ab1f-e...">>,...},...}},...}},...},...},...},...}
+2021-05-24 19:28:58.698 [error] <0.518.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.514.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => assign,message => nil,term => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"connection">> => <<"keep-alive">>,<<"content-length">> => <<"0">>,<<"host">> => <<"localhost:4000">>,<<"postman-token">> => <<"fa240ae6-5c0d-41b1-ab1f-efa...">>,...},...}},...}},...},...},...}
+2021-05-24 19:30:01.393 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:30:01.398 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:30:01.403 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:30:01.404 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:30:01.404 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:30:01.404 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:30:01.416 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:30:01.416 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:30:01.429 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:30:01.431 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:30:01.431 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:30:01.477 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:30:01.554 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:30:09.993 [error] <0.518.0> CRASH REPORT Process <0.518.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,109}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/De..."},...]},...]},...},...},...}
+2021-05-24 19:30:09.996 [error] <0.518.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.514.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,109}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desk..."},...]},...]},...},...}
+2021-05-24 19:31:54.660 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:31:54.665 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:31:54.670 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:31:54.670 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:31:54.671 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:31:54.671 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:31:54.681 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:31:54.681 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:31:54.691 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:31:54.692 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:31:54.692 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:31:54.735 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:31:54.820 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:32:02.820 [error] <0.518.0> CRASH REPORT Process <0.518.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/De..."},...]},...]},...},...},...}
+2021-05-24 19:32:02.822 [error] <0.518.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.514.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desk..."},...]},...]},...},...}
+2021-05-24 19:32:46.126 [error] <0.522.0> CRASH REPORT Process <0.522.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/De..."},...]},...]},...},...},...}
+2021-05-24 19:32:46.126 [error] <0.522.0> Cowboy stream 5 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.514.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desk..."},...]},...]},...},...}
+2021-05-24 19:37:33.768 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:37:33.773 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:37:33.777 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:37:33.777 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:37:33.777 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:37:33.778 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:37:33.788 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:37:33.789 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:37:33.798 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:37:33.799 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:37:33.799 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:37:33.839 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:37:33.916 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:37:51.780 [error] <0.518.0> CRASH REPORT Process <0.518.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/De..."},...]},...]},...},...},...}
+2021-05-24 19:37:51.783 [error] <0.518.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.514.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desk..."},...]},...]},...},...}
+2021-05-24 19:47:37.833 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:47:37.838 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:47:37.843 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:47:37.843 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:47:37.843 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:47:37.843 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:47:37.854 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:47:37.854 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:47:37.864 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:47:37.866 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:47:37.866 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:47:37.907 [warning] <0.398.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:47:38.001 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:47:50.597 [error] <0.525.0> CRASH REPORT Process <0.525.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/De..."},...]},...]},...},...},...}
+2021-05-24 19:47:50.607 [error] <0.525.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.521.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.KeyError',key => claims,message => nil,term => #{}},[{'Elixir.Api.Router','-do_match/4-fun-5-',2,[{file,"lib/api_test/router.ex"},{line,110}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desk..."},...]},...]},...},...}
+2021-05-24 19:48:59.228 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:48:59.233 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:48:59.237 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:48:59.238 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:48:59.238 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:48:59.238 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:48:59.250 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:48:59.250 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:48:59.259 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:48:59.260 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:48:59.260 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:48:59.299 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:48:59.376 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:50:33.792 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:50:33.797 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:50:33.802 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:50:33.802 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:50:33.802 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:50:33.802 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:50:33.812 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:50:33.812 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:50:33.822 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:50:33.824 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:50:33.824 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:50:33.864 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:50:33.942 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:51:11.092 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:51:11.097 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:51:11.101 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:51:11.101 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:51:11.101 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:51:11.102 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:51:11.111 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:51:11.111 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:51:11.120 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:51:11.122 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:51:11.122 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:51:11.166 [warning] <0.391.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:51:11.240 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:51:41.053 [error] <0.520.0> CRASH REPORT Process <0.520.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => validate_token,message => nil,module => 'Elixir.Api.Service.Auth',reason => nil},[{'Elixir.Api.Service.Auth',validate_token,[<0.521.0>,<<"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE4Nzg2NzcsImlhdCI6MTYyMTg3NTA3NywiaWQiOiJkZWNlMWI2Mi0wYzVkLTQ5NmYtYmFmYy1kYzhmNjAzNGFhNGYiLCJhdWQiOiJKb2tlbiIsImV4cCI6MTYyMTg4MjI3NywiaWF0IjoxNjIxODc1MDc3LCJpc3MiOiJKb2tlbiIsImp0aSI6IjJxMTB0aWd1YXJ1bzFuZz...">>],...},...]},...},...},...}
+2021-05-24 19:51:41.055 [error] <0.520.0> Cowboy stream 4 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.514.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => validate_token,message => nil,module => 'Elixir.Api.Service.Auth',reason => nil},[{'Elixir.Api.Service.Auth',validate_token,[<0.521.0>,<<"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE4Nzg2NzcsImlhdCI6MTYyMTg3NTA3NywiaWQiOiJkZWNlMWI2Mi0wYzVkLTQ5NmYtYmFmYy1kYzhmNjAzNGFhNGYiLCJhdWQiOiJKb2tlbiIsImV4cCI6MTYyMTg4MjI3NywiaWF0IjoxNjIxODc1MDc3LCJpc3MiOiJKb2tlbiIsImp0aSI6IjJxMTB0aWd1YXJ1bzFuZzhq...">>],...},...]},...},...}
+2021-05-24 19:53:44.548 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:53:44.552 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:53:44.557 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:53:44.557 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:53:44.557 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:53:44.558 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:53:44.568 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:53:44.568 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:53:44.579 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:53:44.581 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:53:44.581 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:53:44.638 [warning] <0.393.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:53:44.720 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:53:59.635 [error] <0.522.0> gen_server <0.522.0> terminated with reason: {badkey,id,#{token => <<"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE4Nzg4MzIsImlhdCI6MTYyMTg3NTIzMiwiaWQiOiI5YjU4OWUwMS1lZTMxLTQ2MjUtYmZjNi02N2Y2ZTUwMWUyMjAiLCJhdWQiOiJKb2tlbiIsImV4cCI6MTYyMTg4MjQzMiwiaWF0IjoxNjIxODc1MjMyLCJpc3MiOiJKb2tlbiIsImp0aSI6IjJxMTB0cmo1dHUwODFpZ3B2YzAwMDAwMyIsIm5iZiI6MTYyMTg3NTIzMn0.5loN1vmJxWT3L3idEod0O3S_O17U8_gFg5ySwa6EdxI">>}} in 'Elixir.Api.Service.Auth':handle_call/3 line 54
+2021-05-24 19:53:59.656 [error] <0.522.0> CRASH REPORT Process <0.522.0> with 2 neighbours crashed with reason: {badkey,id,#{token => <<"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE4Nzg4MzIsImlhdCI6MTYyMTg3NTIzMiwiaWQiOiI5YjU4OWUwMS1lZTMxLTQ2MjUtYmZjNi02N2Y2ZTUwMWUyMjAiLCJhdWQiOiJKb2tlbiIsImV4cCI6MTYyMTg4MjQzMiwiaWF0IjoxNjIxODc1MjMyLCJpc3MiOiJKb2tlbiIsImp0aSI6IjJxMTB0cmo1dHUwODFpZ3B2YzAwMDAwMyIsIm5iZiI6MTYyMTg3NTIzMn0.5loN1vmJxWT3L3idEod0O3S_O17U8_gFg5ySwa6EdxI">>}} in 'Elixir.Api.Service.Auth':handle_call/3 line 54
+2021-05-24 19:53:59.658 [error] <0.520.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.516.0> had its request process exit with reason: {badkey,id,#{token => <<"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjE4Nzg4MzIsImlhdCI6MTYyMTg3NTIzMiwiaWQiOiI5YjU4OWUwMS1lZTMxLTQ2MjUtYmZjNi02N2Y2ZTUwMWUyMjAiLCJhdWQiOiJKb2tlbiIsImV4cCI6MTYyMTg4MjQzMiwiaWF0IjoxNjIxODc1MjMyLCJpc3MiOiJKb2tlbiIsImp0aSI6IjJxMTB0cmo1dHUwODFpZ3B2YzAwMDAwMyIsIm5iZiI6MTYyMTg3NTIzMn0.5loN1vmJxWT3L3idEod0O3S_O17U8_gFg5ySwa6EdxI">>}} in 'Elixir.Api.Service.Auth':handle_call/3 line 54
+2021-05-24 19:58:00.184 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:58:00.189 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:58:00.194 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:58:00.194 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:58:00.194 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:58:00.194 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:58:00.204 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:58:00.204 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:58:00.213 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:58:00.213 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:58:00.213 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:58:00.261 [warning] <0.392.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:58:00.336 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 19:58:17.215 [error] <0.519.0> CRASH REPORT Process <0.519.0> with 1 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.CaseClauseError',term => {ok,#{aud => <<"Joken">>,exp => 1621879090,iat => 1621875490,id => <<"d8aeab80-ed3f-4b88-bc16-7147e1e3542a">>,iss => <<"Joken">>,jti => <<"2q10uaj4nn000m1a140000c6">>,nbf => 1621875490}}},[{'Elixir.Api.AuthPlug',call,2,[{file,"lib/api_test/plugs/validate_token.ex"},{line,18}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/p..."},...]},...]},...},...},...}
+2021-05-24 19:58:17.217 [error] <0.519.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.515.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.CaseClauseError',term => {ok,#{aud => <<"Joken">>,exp => 1621879090,iat => 1621875490,id => <<"d8aeab80-ed3f-4b88-bc16-7147e1e3542a">>,iss => <<"Joken">>,jti => <<"2q10uaj4nn000m1a140000c6">>,nbf => 1621875490}}},[{'Elixir.Api.AuthPlug',call,2,[{file,"lib/api_test/plugs/validate_token.ex"},{line,18}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plu..."},...]},...]},...},...}
+2021-05-24 19:59:28.750 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 19:59:28.754 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 19:59:28.759 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 19:59:28.759 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 19:59:28.759 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 19:59:28.759 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 19:59:28.768 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 19:59:28.768 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 19:59:28.777 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 19:59:28.778 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 19:59:28.778 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 19:59:28.827 [warning] <0.392.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 19:59:28.900 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 20:00:38.523 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 20:00:38.529 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 20:00:38.534 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 20:00:38.534 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 20:00:38.534 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 20:00:38.535 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 20:00:38.544 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 20:00:38.544 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 20:00:38.553 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 20:00:38.554 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 20:00:38.555 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 20:00:38.604 [warning] <0.392.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 20:00:38.675 [info] <0.44.0> Application api_test started on node nonode@nohost
+2021-05-24 20:00:50.668 [error] <0.519.0> CRASH REPORT Process <0.519.0> with 2 neighbours exited with reason: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.MatchError',term => ok},[{'Elixir.Api.Router','-do_match/4-fun-7-',2,[{file,"lib/api_test/router.ex"},{line,111}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desktop/rabbit/deps/cowboy/src..."},...]},...]},...},...},...}
+2021-05-24 20:00:50.674 [error] <0.519.0> Cowboy stream 3 with ranch listener 'Elixir.Api.Router.HTTP' and connection process <0.515.0> had its request process exit with reason: {{{#{'__exception__' => true,'__struct__' => 'Elixir.MatchError',term => ok},[{'Elixir.Api.Router','-do_match/4-fun-7-',2,[{file,"lib/api_test/router.ex"},{line,111}]},{'Elixir.Api.Router',dispatch,2,[{file,"lib/plug/router.ex"},{line,284}]},{'Elixir.Api.Router',plug_builder_call,2,[{file,"lib/api_test/router.ex"},{line,1}]},{'Elixir.Plug.Cowboy.Handler',init,2,[{file,"lib/plug/cowboy/handler.ex"},{line,12}]},{cowboy_handler,execute,2,[{file,"c:/Users/Raul/Desktop/rabbit/deps/cowboy/src/c..."},...]},...]},...},...}
+2021-05-24 20:06:43.846 [info] <0.44.0> Application lager started on node nonode@nohost
+2021-05-24 20:06:43.851 [info] <0.44.0> Application xmerl started on node nonode@nohost
+2021-05-24 20:06:43.856 [info] <0.44.0> Application sasl started on node nonode@nohost
+2021-05-24 20:06:43.856 [info] <0.44.0> Application tools started on node nonode@nohost
+2021-05-24 20:06:43.856 [info] <0.44.0> Application jsx started on node nonode@nohost
+2021-05-24 20:06:43.856 [info] <0.44.0> Application recon started on node nonode@nohost
+2021-05-24 20:06:43.867 [info] <0.44.0> Application credentials_obfuscation started on node nonode@nohost
+2021-05-24 20:06:43.867 [info] <0.44.0> Application rabbit_common started on node nonode@nohost
+2021-05-24 20:06:43.877 [info] <0.44.0> Application amqp_client started on node nonode@nohost
+2021-05-24 20:06:43.878 [info] <0.44.0> Application amqp started on node nonode@nohost
+2021-05-24 20:06:43.878 [info] <0.44.0> Application uuid started on node nonode@nohost
+2021-05-24 20:06:43.919 [warning] <0.398.0> AMQP 0-9-1 client call timeout was 60000 ms, is updated to a safe effective value of 70000 ms
+2021-05-24 20:06:43.992 [info] <0.44.0> Application api_test started on node nonode@nohost
