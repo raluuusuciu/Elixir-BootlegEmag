@@ -9,7 +9,6 @@ defmodule ApiTest.Application do
   def start(_type, _args) do
     :ets.new(:bands, [:bag, :public, :named_table])
     :ets.new(:users, [:bag, :public, :named_table])
-    :ets.new(:products, [:bag, :public, :named_table])
 
     children = [
       # Starts a worker by calling: ApiTest.Worker.start_link(arg)
