@@ -1,4 +1,4 @@
-defmodule Api.DB.ProductRepository do
+defmodule Api.DB.ShoppingCartRepository do
 
     alias Api.Helpers.MapHelper
 

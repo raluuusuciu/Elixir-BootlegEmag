@@ -2,7 +2,7 @@ defmodule Api.Models.Discount do
   @db_name Application.get_env(:api_test, :db_db)
   @db_table "events"
 
-  use Api.Models.Discount
+  use Api.DB.EventsRepository
 
   defstruct [
       :id,
