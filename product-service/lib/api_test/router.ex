@@ -70,9 +70,7 @@ defmodule Api.Router do
   end
 
   delete "product/:id" do
-    {parsedId, ""} = Integer.parse(id)
-
-    case Product.delete(parsedId) do
+    case Product.delete(id) do
       :error ->
          conn
          |> put_status(404)
@@ -88,16 +86,17 @@ defmodule Api.Router do
   patch "product/:id", private: %{view: ProductView} do
     {parsedId, ""} = Integer.parse(id)
 
-    {name, category, price, image} = {
+    {name, category, price, image, id} = {
       Map.get(conn.params, "name", nil),
       Map.get(conn.params, "category", nil),
       Map.get(conn.params, "price", nil),
-      Map.get(conn.params, "image", nil)
+      Map.get(conn.params, "image", nil),
+      Map.get(conn.params, "id", nil)
     }
 
     Product.delete(parsedId)
 
-    case %Product{name: name, category: category, price: price, image: image} |> Product.save do
+    case %Product{name: name, category: category, price: price, image: image, id: id} |> Product.save do
       {:ok, createdProduct} ->
         conn
         |> put_status(200)
