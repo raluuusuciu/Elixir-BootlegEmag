@@ -33,7 +33,8 @@ defmodule ApiTest.MixProject do
       {:amqp, "~> 2.1"},
       {:uuid, "~> 1.1"},
       {:enum_type, "~> 1.1.2"},
-      {:mongodb, "~> 0.5.1"}
+      {:mongodb_driver, "~> 0.7.3"},
+      {:plug_crypto, "~> 1.2"}
     ]
   end
 end

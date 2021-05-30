@@ -39,6 +39,7 @@ defmodule Api.DB.ProductRepository do
 
         def find(filters) when is_map(filters) do
           cursor = Mongo.find(:mongo, @db_table, filters)
+            |> Enum.map(fn x -> Map.delete(x, "_id") end)
 
           case cursor |> Enum.to_list do
             [] ->
