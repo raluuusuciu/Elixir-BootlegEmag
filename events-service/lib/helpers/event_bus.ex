@@ -21,6 +21,11 @@ defmodule Api.Helpers.EventBus do
           name: :bus_state
         )
 
+        AMPQ.Basic.consume(chan,
+                          queue,
+                          nil,
+                          no_ack: true)
+
         {:ok, self}
       end
 
@@ -30,13 +35,19 @@ defmodule Api.Helpers.EventBus do
     end
   end
 
-
-
   def publish(routing_key, payload, options \\ []) do
     state       = Agent.get(:bus_state, &(&1))
     chan        = Keyword.get(state, :chan)
     exchange    = Keyword.get(state, :exchange)
     AMQP.Basic.publish(chan, exchange, routing_key, payload, options)
+  end
+
+  def wait_for_messages do
+      receive do
+        {:basic_deliver, payload, _meta} ->
+          IO.puts(" [x] Received #{payload}")
+          wait_for_messages()
+      end
   end
 
 end

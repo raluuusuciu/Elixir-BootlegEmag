@@ -15,4 +15,4 @@ routing_keys: %{
 },
 event_url: "guest:guest@localhost", #username:passwd (here default)
 event_exchange: "auth_api",
-event_queue: "auth_service"
+event_queue: "events_service"
