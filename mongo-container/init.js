@@ -21,5 +21,6 @@ function createCollectionAndUser(databaseName) {
 let res = [
     createCollectionAndUser('products'),
     createCollectionAndUser('users'),
-    createCollectionAndUser('shoppingcart')
+    createCollectionAndUser('shoppingcart'),
+    createCollectionAndUser('events')
 ];
