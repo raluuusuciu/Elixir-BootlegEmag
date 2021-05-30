@@ -17,17 +17,6 @@ defmodule Api.DB.EventsRepository do
         end
 
         def save(document) when is_map(document) do
-          document = case {document.created_at, document.updated_at}  do
-            {nil, nil} ->
-              document
-              |> Map.put(:created_at, Timex.to_unix(Timex.now))
-              |> Map.put(:updated_at, Timex.to_unix(Timex.now))
-            {_, _} ->
-              document
-              |> Map.put(:updated_at, Timex.to_unix(Timex.now))
-          end
-          |> Map.from_struct
-
           case Mongo.insert_one(:mongo, @db_table, document) do
             {:ok, _} ->
               {:ok, document}
@@ -39,6 +28,7 @@ defmodule Api.DB.EventsRepository do
 
         def find(filters) when is_map(filters) do
           cursor = Mongo.find(:mongo, @db_table, filters)
+          |> Enum.map(fn x -> Map.delete(x, "_id") end)
 
           case cursor |> Enum.to_list do
             [] ->
