@@ -32,7 +32,8 @@ defmodule ApiTest.MixProject do
       {:timex, "~> 3.0"},
       {:amqp, "~> 2.1"},
       {:uuid, "~> 1.1"},
-      {:enum_type, "~> 1.1.2"}
+      {:enum_type, "~> 1.1.2"},
+      {:mongodb, "~> 0.5.1"}
     ]
   end
 end

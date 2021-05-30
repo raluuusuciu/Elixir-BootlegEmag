@@ -119,8 +119,6 @@ defmodule Api.Router do
     |> assign(:jsonapi, products)
   end
 
- forward("/bands", to: Api.Endpoint)
-
   match _ do
     conn
     |> put_status(404)
