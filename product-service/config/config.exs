@@ -9,6 +9,6 @@ config :api_test,
   ],
 
 api_host: "localhost",
-api_port: 4000,
+api_port: 4010,
 api_scheme: "http",
 show_sensitive_data_on_connection_error: true

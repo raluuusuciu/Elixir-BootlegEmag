@@ -1,0 +1,12 @@
+FROM elixir:1.12.0-alpine AS builder
+
+WORKDIR /opt/app
+
+COPY . .
+
+RUN mix local.hex --force
+RUN mix local.rebar --force
+RUN mix do deps.clean --all, deps.get, deps.compile
+
+EXPOSE 4000
+ENTRYPOINT ["mix", "run", "--no-halt"]

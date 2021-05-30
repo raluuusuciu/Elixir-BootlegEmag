@@ -16,8 +16,8 @@ defmodule Api.Router do
   plug :encode_response
 
   defp encode_response(conn, _) do
-    conn
-    |> send_resp(conn.status, conn.assigns |> Map.get(:jsonapi, %{}) |> Poison.encode!)
+      conn
+      |> send_resp(conn.status, conn.assigns |> Map.get(:jsonapi, %{}) |> Poison.encode!)
   end
 
   post "/login", private: %{jwt_skip: true} do
@@ -124,7 +124,8 @@ defmodule Api.Router do
         end
   end
 
- forward("/bands", to: Api.Endpoint)
+  forward("/bands", to: Api.Endpoint)
+  forward("/product", to: Api.ProductEndpoint)
 
   match _ do
     conn

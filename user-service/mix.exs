@@ -32,7 +32,12 @@ defmodule ApiTest.MixProject do
       {:timex, "~> 3.0"},
       {:amqp, "~> 2.1"},
       {:uuid, "~> 1.1"},
-      {:enum_type, "~> 1.1.2"}
+      {:enum_type, "~> 1.1.2"},
+      {:mongodb_driver, "~> 0.7.3"},
+      {:plug_crypto, "~> 1.2"},
+      {:tesla, "~> 1.4.0"},
+      {:hackney, "~> 1.17.0"},
+      {:jason, ">= 1.0.0"}
     ]
   end
 end

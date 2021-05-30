@@ -1,8 +1,8 @@
 defmodule Api.AuthPlug do
     import Plug.Conn
-  
+
     def init(opts), do: opts
-  
+
     def call(conn, opts) do
       cond do
         conn.private |> Map.get(:jwt_skip, false) ->
@@ -10,9 +10,9 @@ defmodule Api.AuthPlug do
         true ->
           {:ok, service} = Api.Service.Auth.start_link
           headers = get_req_header(conn, "authorization")
-  
+
           #token = headers |> List.first |> String.split(" ") |> List.last
-  
+
           case headers do
             ["Bearer " <> token] ->
               case Api.Service.Auth.validate_token(service, token) do
@@ -31,6 +31,5 @@ defmodule Api.AuthPlug do
           end
       end
     end
-  
+
   end
-  

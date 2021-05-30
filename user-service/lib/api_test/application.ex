@@ -13,7 +13,8 @@ defmodule ApiTest.Application do
     children = [
       # Starts a worker by calling: ApiTest.Worker.start_link(arg)
       # {ApiTest.Worker, arg}
-      {Plug.Cowboy, scheme: :http, plug: Api.Router, options: [port: api_port]}
+      {Plug.Cowboy, scheme: :http, plug: Api.Router, options: [port: api_port]},
+      {Mongo, [name: :mongo, url: "mongodb://root-user:password@localhost:27017/users"]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
