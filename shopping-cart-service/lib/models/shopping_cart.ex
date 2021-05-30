@@ -6,7 +6,6 @@ defmodule Api.Models.ShoppingCart do
 
   defstruct [
       :user_id,
-      :product_id,
-      :quantity
+      :items
   ]
 end
