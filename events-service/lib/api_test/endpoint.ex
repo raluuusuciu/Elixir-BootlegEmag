@@ -17,5 +17,4 @@ defmodule Api.Endpoint do
     |> put_status(200)
     |> assign(:jsonapi, %{"message" => "'this' is a private EP"})
   end
-
 end

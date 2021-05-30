@@ -7,6 +7,6 @@ defmodule Api.Models.UserEvent do
   defstruct [
       :id,
       :user_id,
-      :action_type
+      :type
   ]
 end

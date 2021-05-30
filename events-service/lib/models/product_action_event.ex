@@ -1,4 +1,4 @@
-defmodule Api.Models.UserEvent do
+defmodule Api.Models.ProductEvent do
   @db_name Application.get_env(:api_test, :db_db)
   @db_table "events"
 
