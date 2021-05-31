@@ -1,0 +1,8 @@
+<div style="vertical-align: middle;">
+    <div *ngFor="let viewModel of shoppingCartProducts">
+        {{viewModel.product.name}} - {{viewModel.product.price}}$ - {{viewModel.quantity}} qnty.
+        <button mat-button color="warn">Delete</button>
+    </div>
+    
+    <button mat-button color="primary">Checkout</button>
+</div>

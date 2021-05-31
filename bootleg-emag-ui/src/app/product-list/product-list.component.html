@@ -1,0 +1,45 @@
+<div class="product__list" *ngIf="showContent">
+    <mat-paginator
+    class="pagination"
+      *ngIf="products"
+      [length]="products.length"
+      [pageSize]="pageSize"
+      [hidePageSize]="true"
+      (page)="pageChanged($event)"
+    >
+    </mat-paginator>
+    
+    <div class="products__container">
+      <ng-container *ngFor="let product of (products | slice: lowValue : highValue)">
+        <section class="product__item">
+          <figure class="product__figure">
+            <img
+              *ngIf="product.image"
+              loading="lazy"
+              class="product__image"
+              [src]="product.image"
+              alt=""
+            />
+          </figure>
+    
+          <div class="product__content">
+            <p>
+              <strong class="product__title">{{ product.name }}</strong>
+            </p>
+            <p class="product__description">Category: {{ product.category }}</p>
+          </div>
+          <footer class="product__footer">
+            <em class="product__price">{{ product.price | currency: "EUR" }}</em>
+    
+            <button color="primary" mat-flat-button (click)="addToShoppingCart(product)">Add to cart</button>
+          </footer>
+        </section>
+      </ng-container>
+    </div>
+
+    <div class="footer-shopping-cart-button">
+      <button mat-fab color="primary">
+        <mat-icon [matBadge]="shoppingCartItems" matBadgeColor="warn" (click)="navigateToShoppingCart()">shopping_cart</mat-icon>
+      </button>
+    </div>
+</div>
