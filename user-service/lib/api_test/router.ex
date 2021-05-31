@@ -1,6 +1,7 @@
 defmodule Api.Router do
   use Plug.Router
 
+  alias Api.Models.User
   alias Api.Service.Publisher
 
   @routing_keys Application.get_env(:api_test, :routing_keys)
@@ -44,7 +45,7 @@ defmodule Api.Router do
          |> assign(:claims, %{:id => id, :token => token})
 
       true ->
-        case Api.DB.UserRepository.get_by_id(name) do
+        case User.get(name) do
             {:ok, user} ->
                 cond do user.password == password ->
                     {:ok, service} = Api.Service.Auth.start_link
@@ -73,9 +74,10 @@ defmodule Api.Router do
  end
 
  post "/register", private: %{jwt_skip: true} do
-  {name, password} = {
+  {name, password, id} = {
     Map.get(conn.params, "name", nil),
-    Map.get(conn.params, "password", nil)
+    Map.get(conn.params, "password", nil),
+    Map.get(conn.params, "id", nil)
   }
 
   cond do
@@ -92,16 +94,27 @@ defmodule Api.Router do
 
     true ->
       id = UUID.uuid4()
-      createdUser = %Api.Models.User{id: id, name: name, password: password} |> Api.DB.UserRepository.add
+      case %User{name: name, password: password, id: id} |> User.save do
+        {:ok, createdUser} ->
+          Publisher.publish(
+          @routing_keys |> Map.get("user_register"),
+          %{:id => createdUser.id, :name => createdUser.name})
 
-      Publisher.publish(
-        @routing_keys |> Map.get("user_register"),
-        %{:id => createdUser.id, :name => createdUser.name})
+          conn
+          |> put_status(201)
+          |> assign(:jsonapi, createdUser)
+          |> assign(:claims, %{:id => id})
 
-      conn
-      |> put_status(201)
-      |> assign(:jsonapi, createdUser)
-      |> assign(:claims, %{:id => id})
+          uri = "#{@api_scheme}://#{@api_host}:#{@api_port}#{conn.request_path}/"
+          conn
+            |> put_resp_header("location", "#{uri}#{id}")
+            |> put_status(201)
+            |> assign(:jsonapi, createdUser)
+        :error ->
+          conn
+           |> put_status(500)
+           |> assign(:jsonapi, %{"error" => "An unexpected error happened"})
+      end
     end
   end
 
