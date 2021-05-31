@@ -7,8 +7,8 @@ defmodule Api.DB.UserRepository do
     defmacro __using__(_) do
       quote do
 
-        def get(id) do
-          case Mongo.find_one(:mongo, @db_table, %{id: id}) do
+        def get(name) do
+          case Mongo.find_one(:mongo, @db_table, %{name: name}) do
             nil ->
               :error
             doc ->
