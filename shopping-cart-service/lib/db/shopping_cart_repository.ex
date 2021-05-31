@@ -12,7 +12,8 @@ defmodule Api.DB.ShoppingCartRepository do
             nil ->
               :error
             doc ->
-              {:ok, doc |> MapHelper.string_keys_to_atoms |> merge_to_struct}
+              removedIdDocument = Map.delete(doc, "_id")
+              {:ok, removedIdDocument |> MapHelper.string_keys_to_atoms |> merge_to_struct}
           end
         end
 

@@ -37,6 +37,7 @@ defmodule ApiTest.MixProject do
       {:plug_crypto, "~> 1.2"},
       {:tesla, "~> 1.4.0"},
       {:hackney, "~> 1.17.0"},
+      {:cors_plug, "~> 2.0"},
       {:jason, ">= 1.0.0"}
     ]
   end

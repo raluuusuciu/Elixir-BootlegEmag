@@ -4,8 +4,8 @@ defmodule Api.ShoppingCartEndpoint do
   plug :match
   plug :dispatch
 
-  get "/" do
-    case ShoppingCartReverseProxy.get() do
+  get "/:id" do
+    case ShoppingCartReverseProxy.get(id) |> IO.inspect() do
       {:ok, response} ->
         conn
         |> put_status(200)

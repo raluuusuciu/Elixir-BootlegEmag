@@ -5,6 +5,7 @@ defmodule Api.Router do
 
   @routing_keys Application.get_env(:api_test, :routing_keys)
 
+  plug CORSPlug
   plug(:match)
   plug(Plug.Parsers,
     parsers: [:json],
@@ -33,9 +34,9 @@ defmodule Api.Router do
         token = Api.Service.Auth.issue_token(service, %{:id => id})
 
         #publishing login event
-      Publisher.publish(
-        @routing_keys |> Map.get("user_login"),
-        %{:id => id, :name => name})
+      #Publisher.publish(
+        #@routing_keys |> Map.get("user_login"),
+        #%{:id => id, :name => name})
         # user |> Map.take([:id,:name]))
 
      conn
@@ -110,9 +111,9 @@ defmodule Api.Router do
 
     case Api.Service.Auth.revoke_token(service, conn.assigns.claims) do
         {:ok, id} ->
-        Publisher.publish(
-            @routing_keys |> Map.get("user_logout"),
-            %{:id => conn.assigns.claims.id, :id => id})
+        #Publisher.publish(
+        #    @routing_keys |> Map.get("user_logout"),
+        #    %{:id => conn.assigns.claims.id, :id => id})
 
         conn
             |> put_status(201)
@@ -126,6 +127,7 @@ defmodule Api.Router do
 
   forward("/bands", to: Api.Endpoint)
   forward("/product", to: Api.ProductEndpoint)
+  forward("/shoppingcart", to: Api.ShoppingCartEndpoint)
 
   match _ do
     conn

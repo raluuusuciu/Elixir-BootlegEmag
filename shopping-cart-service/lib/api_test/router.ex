@@ -63,6 +63,14 @@ defmodule Api.Router do
     |> assign(:jsonapi, shoppingcart)
   end
 
+  get "shoppingcart/:username", private: %{view: ShoppingCartView} do
+    {_, shoppingcart} = ShoppingCart.get(username)
+
+    conn
+    |> put_status(200)
+    |> assign(:jsonapi, shoppingcart)
+  end
+
   match _ do
     conn
     |> put_status(404)
