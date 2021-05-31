@@ -1,0 +1,14 @@
+<div class="root">
+  <mat-toolbar color="primary" class="app-header">
+    <div><a href="/home" class="positronx">BootlegEmag</a></div>
+    <span class="nav-tool-items" *ngIf="!this.isUserLoggedIn">
+      <a mat-button routerLink="login" routerLinkActive="active">Login</a>
+      <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+    </span>
+    <span class="nav-tool-items" *ngIf="this.isUserLoggedIn">
+      <a mat-button routerLink="logout" routerLinkActive="active" (click)="logout()">Logout</a>
+    </span>
+  </mat-toolbar>
+  
+  <router-outlet></router-outlet>
+</div>
